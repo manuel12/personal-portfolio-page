@@ -109,18 +109,20 @@ body {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  grid-gap: 4rem;
+  grid-template-columns: 350px 350px 350px;
+  grid-template-rows: 280px 280px 280px;
+  grid-gap: 3rem;
+  justify-content: center;
 
-  width: 80%;
-  margin: auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .project-tile {
   background-color: black;
   border-radius: 5px;
-  width: 200px;
-  height: 220px;
+  width: 350px;
+  height: 250px;
 }
 
 .project-tile > a {
