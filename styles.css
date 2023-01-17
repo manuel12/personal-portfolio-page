@@ -31,6 +31,7 @@ body {
 
 h1 {
   color: #222222;
+  font-size: 2.1rem;
 }
 
 #navbar {
@@ -38,7 +39,8 @@ h1 {
   background-color: #222222;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
+  justify-content: center;
 }
 
 #navbar > ul {
@@ -48,10 +50,12 @@ h1 {
 
 #navbar > ul > a {
   border-radius: 25px;
-  padding: 10px;
+  /* padding: 10px; */
+  padding: 5px;
   text-decoration: none;
   color: white;
-  font-size: 1.4rem;
+  /* font-size: 1.4rem; */
+  font-size: 1.2rem;
 
   transition: color 1s;
   transition: background-color 1s;
@@ -102,7 +106,7 @@ h1 {
   margin: 20px auto;
   width: 95%;
   height: 100%;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 
 .skill-icon-section {
@@ -143,7 +147,7 @@ h1 {
 }
 
 .projects-heading {
-  font-size: 2.6rem;
+  /* font-size: 2.6rem; */
   text-align: center;
 }
 
@@ -194,8 +198,7 @@ h1 {
   height: 80vh;
 }
 
-#contact > h2 {
-  font-size: 2.6rem;
+#contact > h1 {
   text-align: center;
   color: white;
 }
