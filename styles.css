@@ -34,7 +34,7 @@ h1 {
 }
 
 #navbar {
-  position: fixed;
+  /* position: fixed; */
   background-color: #222222;
   width: 100%;
   display: flex;
@@ -42,7 +42,8 @@ h1 {
 }
 
 #navbar > ul {
-  padding: 0 20px 0 0;
+  /* padding: 0 20px 0 0; */
+  padding: 0;
 }
 
 #navbar > ul > a {
@@ -65,17 +66,21 @@ h1 {
 #welcome-section {
   background-color: white;
   padding: 120px 0 0 0;
+  width: 100%;
   height: 100vh;
 }
 
 .about-heading {
+  width: 90%;
   margin: 50px auto;
-  font-size: 2.6rem;
+  /* font-size: 2.6rem; */
+  font-size: 2.1rem;
   text-align: center;
 }
 
 .about-text {
-  width: 450px;
+  /* width: 450px; */
+  width: 90%;
   text-align: center;
   line-height: 1.8rem;
   font-size: 1.2rem;
@@ -84,8 +89,8 @@ h1 {
 
 #skills {
   background-color: #6e07f3;
-  display: flex;
-  justify-content: space-evenly;
+  /* display: flex; */
+  /* justify-content: space-evenly; */
   min-height: 100vh;
   padding: 15px 0;
 }
@@ -93,8 +98,11 @@ h1 {
 .skill-card {
   background-color: white;
   border-radius: 10px;
-  width: 300px;
+  /* width: 300px; */
+  margin: 20px auto;
+  width: 95%;
   height: 100%;
+  padding-bottom: 40px;
 }
 
 .skill-icon-section {
