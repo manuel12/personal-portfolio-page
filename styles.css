@@ -267,7 +267,10 @@ textarea:focus {
     font-size: 1.4rem;
   }
 
-  .about-heading, .about-text, .skill-card, .project-tile {
+  .about-heading,
+  .about-text,
+  .skill-card,
+  .project-tile {
     width: 80%;
   }
 }
@@ -278,12 +281,14 @@ textarea:focus {
     height: fit-content;
   }
 
-  #skills {
+  .skill-card-container {
     display: flex;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .skill-card {
-    width: 27%;
+    width: 31%;
   }
 
   .projects-grid {
@@ -292,9 +297,22 @@ textarea:focus {
     grid-gap: 0.5rem;
     justify-content: center;
   }
+
+  .project-tile {
+    width: 90%;
+  }
 }
 
 @media only screen and (min-width: 992px) {
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 320px 320px 320px;
+    grid-gap: 1rem;
+  }
+
+  .project-tile {
+    width: 95%;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
