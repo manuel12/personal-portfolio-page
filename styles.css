@@ -27,11 +27,19 @@ h1 {
 }
 
 #navbar > ul > a {
+  /* border: 2px solid white; */
+  border-radius: 25px;
   padding: 10px;
 
   text-decoration: none;
   color: white;
   font-size: 1.4rem;
+}
+
+#navbar > ul > a:hover {
+  background-color: white;
+  border-radius: 25px;
+  color: #222222;
 }
 
 #welcome-section {
@@ -187,7 +195,8 @@ textarea {
   min-height: 200px;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline: 1px solid orange;
 }
 
