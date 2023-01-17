@@ -38,14 +38,18 @@ h1 {
   /* position: fixed; */
   background-color: #222222;
   width: 100%;
+  max-width: 700px;
   display: flex;
   /* justify-content: flex-end; */
-  justify-content: center;
+  justify-content: space-around;
 }
 
 #navbar > ul {
   /* padding: 0 20px 0 0; */
+  width: 100%;
   padding: 0;
+  display: flex;
+  justify-content: space-around;
 }
 
 #navbar > ul > a {
@@ -305,7 +309,6 @@ textarea:focus {
 
 @media only screen and (min-width: 992px) {
   .projects-grid {
-    display: grid;
     grid-template-columns: 320px 320px 320px;
     grid-gap: 1rem;
   }
@@ -316,4 +319,22 @@ textarea:focus {
 }
 
 @media only screen and (min-width: 1200px) {
+  .about-line-break {
+    display: none;
+  }
+
+  .about-heading,
+  .about-text,
+  .skill-card-container {
+    width: 60%;
+  }
+
+  .projects-grid {
+    grid-template-columns: 400px 400px 400px;
+    grid-gap: 1rem;
+  }
+
+  .project-tile {
+    width: 100%;
+  }
 }
