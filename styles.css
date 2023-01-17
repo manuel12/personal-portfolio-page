@@ -2,6 +2,25 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  border-radius: 15px;
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 body {
   background-color: #222222;
   margin: 0;
@@ -27,13 +46,14 @@ h1 {
 }
 
 #navbar > ul > a {
-  /* border: 2px solid white; */
   border-radius: 25px;
   padding: 10px;
-
   text-decoration: none;
   color: white;
   font-size: 1.4rem;
+
+  transition: color 1s;
+  transition: background-color 1s;
 }
 
 #navbar > ul > a:hover {
