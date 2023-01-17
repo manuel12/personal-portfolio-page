@@ -152,21 +152,23 @@ h1 {
 }
 
 .projects-grid {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 350px 350px 350px;
   grid-template-rows: 280px 280px 280px;
-  grid-gap: 3rem;
-  justify-content: center;
+  grid-gap: 3rem; */
+  /* justify-content: center; */
 
   width: 100%;
   margin: 0 auto;
 }
 
 .project-tile {
-  background-color: black;
+  background-color: white;
   border-radius: 5px;
-  width: 350px;
-  height: 250px;
+  /* width: 350px; */
+  width: 90%;
+  height: fit-content;
+  margin: 0 auto 20px;
 }
 
 .project-tile > a {
@@ -254,8 +256,14 @@ textarea:focus {
   color: white;
 }
 
-@media (max-width: 768px) {
-  body {
-    width: 75%;
-  }
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
 }
