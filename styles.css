@@ -68,12 +68,12 @@ h1 {
   padding: 120px 0 10px 0;
   width: 100%;
   height: 100vh;
+  text-align: center;
 }
 
 .about-container {
   width: 90%;
   margin: 0 auto;
-  text-align: center;
 }
 
 .about-heading {
@@ -95,6 +95,7 @@ h1 {
 
 .skills-container {
   margin: 0 auto;
+  text-align: center;
 }
 
 .skill-card {
@@ -119,11 +120,7 @@ h1 {
   font-size: 2.4rem;
 }
 
-.skill-text-section {
-  text-align: center;
-}
-
-#contact > p .skill-text-section > h3 {
+.skill-text-section > h3 {
   margin-bottom: 30px;
   font-family: "Nanum Gothic Coding", monospace;
   font-size: 1.4rem;
@@ -157,7 +154,6 @@ h1 {
   background-color: white;
   border-radius: 5px;
   width: 95%;
-  /* height: fit-content; */
   margin: 0 auto 20px;
 }
 
@@ -173,16 +169,6 @@ h1 {
   object-fit: cover;
 }
 
-.project-name {
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 3px;
-  padding: 5px 0;
-  text-align: center;
-  font-size: 1.2rem;
-  color: black;
-}
-
 .project-name > p {
   margin: 0;
 }
@@ -190,16 +176,16 @@ h1 {
 #contact {
   background-color: #222222;
   height: 80vh;
+  text-align: center;
+  color: white;
 }
 
-#contact > h1 {
-  text-align: center;
+#contact > .contact-container > h1 {
   color: white;
 }
-#contact > p {
+
+#contact > .contact-container > p {
   font-size: 1.1rem;
-  text-align: center;
-  color: white;
 }
 
 form {
@@ -245,7 +231,6 @@ textarea:focus {
 .icon-container > i {
   position: relative;
   top: 9px;
-  left: 9px;
   font-size: 40px;
   color: white;
 
@@ -334,8 +319,8 @@ textarea:focus {
   }
 
   .projects-grid {
-    grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 320px 320px 320px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 290px 290px 290px;
     grid-gap: 1rem;
   }
 
