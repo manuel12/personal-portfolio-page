@@ -22,7 +22,8 @@ body {
   background-color: #222222;
   margin: 0;
   padding: 0;
-  font-family: "europa", sans-serif;
+  font-family: "Fira Code", monospace;
+  font-weight: 100;
   color: #222222;
 }
 
@@ -32,15 +33,17 @@ h1 {
 }
 
 #navbar {
+  position: fixed;
   background-color: #222222;
   width: 100%;
-  max-width: 700px;
   display: flex;
   justify-content: space-around;
 }
 
 #navbar > ul {
+  margin: 5px auto;
   width: 100%;
+  max-width: 700px;
   padding: 0;
   display: flex;
   justify-content: space-around;
@@ -72,7 +75,7 @@ h1 {
 }
 
 .about-container {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -91,11 +94,16 @@ h1 {
   background-color: #6e07f3;
   min-height: 100vh;
   padding: 15px 0;
+  text-align: center;
+}
+
+#skills > h1 {
+  color: white;
 }
 
 .skills-container {
   margin: 0 auto;
-  text-align: center;
+  width: 80%;
 }
 
 .skill-card {
@@ -133,6 +141,16 @@ h1 {
   line-height: 1.5;
 }
 
+.skill-list-section > h3 {
+  font-family: "Nanum Gothic Coding", monospace;
+}
+
+.skill-list-section > p {
+  margin: 0 auto;
+  width: 80%;
+  font-size: 1.1rem;
+}
+
 #projects {
   background-color: #f5f5f5;
   height: fit-content;
@@ -142,7 +160,7 @@ h1 {
 
 .projects-container {
   margin: 0 auto;
-  width: 95%;
+  width: 80%;
 }
 
 .projects-grid {
@@ -154,6 +172,7 @@ h1 {
   background-color: white;
   border-radius: 5px;
   width: 95%;
+  max-width: 450px;
   margin: 0 auto 20px;
 }
 
@@ -243,28 +262,6 @@ textarea:focus {
 
 .icon-container > i:hover {
   color: #222222;
-}
-
-@media only screen and (min-width: 600px) {
-  #navbar > ul {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-  }
-
-  #navbar > ul > a {
-    font-size: 1.4rem;
-  }
-
-  .about-container,
-  .skills-container,
-  .projects-container {
-    width: 80%;
-  }
-
-  .project-tile {
-    max-width: 450px;
-  }
 }
 
 @media only screen and (min-width: 768px) {
