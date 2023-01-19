@@ -37,7 +37,8 @@
   --h1: var(--black);
 
   --navbar-background: var(--black);
-  --navbar-ul-a-hover: var(--black);
+  --navbar-ul-a-backgorund-hover: var(--black);
+  --navbar-ul-a-hover: var(--cyan);
 
   --skills-background: var(--purple);
   --skills-icon-section-fa-solid-background: var(--cyan);
@@ -116,7 +117,7 @@ h1 {
 }
 
 #navbar > ul > a:hover {
-  background-color: white;
+  background-color: var(--navbar-ul-a-backgorund-hover);
   border-radius: 25px;
   color: var(--navbar-ul-a-hover);
 }
