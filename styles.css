@@ -4,6 +4,7 @@
 
 :root {
   --black: #222222;
+  --lighter-black: #252934;
   --purple: #6e07f3;
   --cyan: #07ddf3;
   --light-white: #f5f5f5;
@@ -40,7 +41,7 @@
   --navbar-ul-a-backgorund-hover: var(--black);
   --navbar-ul-a-hover: var(--cyan);
 
-  --skills-background: var(--purple);
+  --skills-background: var(--lighter-black);
   --skills-icon-section-fa-solid-background: var(--cyan);
 
   --projects-background: var(--light-white);
