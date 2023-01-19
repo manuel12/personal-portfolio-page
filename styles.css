@@ -5,11 +5,23 @@
 :root {
   --black: #222222;
   --lighter-black: #252934;
-  --purple: #6e07f3;
-  --cyan: #07ddf3;
+
   --light-white: #f5f5f5;
   --white: #ffffff;
+
+  --greyish: #626997;
+  --dark-blue: #141c3a;
+
+  --purple: #6e07f3;
+  --cyan: #07ddf3;
   --orange: #ffa500;
+  --red: #fb3636;
+
+  --green: #61ff65;
+  --darker-green: #4ac64e;
+
+  --main-color: #474747;
+  --action-color: #00c896;
 
   /* --body-background: var(--black);
   --body-font: var(--black);
@@ -33,30 +45,33 @@
   --icon-container-i-hover: var(--black);
   */
 
-  --body-background: var(--black);
-  --body-font: var(--black);
-  --h1: var(--black);
+  --body-background: var(--main-color);
+  --body-font: var(--dark-blue);
+  --h1: var(--dark-blue);
 
-  --navbar-background: var(--black);
-  --navbar-ul-a-backgorund-hover: var(--black);
-  --navbar-ul-a-hover: var(--cyan);
+  --navbar-background: var(--main-color);
+  --navbar-ul-a-backgorund-hover: var(--figma-green);
+  --navbar-ul-a-hover: var(--action-color);
 
-  --skills-background: var(--lighter-black);
-  --skills-icon-section-fa-solid-background: var(--cyan);
+  --skills-background: var(--main-color);
+  --skills-icon-section-fa-solid-background: var(--action-color);
 
-  --projects-background: var(--light-white);
-  --contact-background: var(--black);
+  --projects-background: var(--white);
+
+  --contact-background: var(--main-color);
   --contact-font: var(--white);
 
-  --input-textarea-outline: var(--cyan);
+  --input-textarea-outline: var(--action-color);
 
-  --icon-container-background: var(--black);
+  --submit-btn-background: var(--action-color);
+
+  --icon-container-background: var(--main-color);
   --icon-container-border: var(--white);
 
-  --icon-container-background-hover: var(--black);
-  --icon-container-border-hover: var(--cyan);
+  --icon-container-background-hover: var(--white);
+  --icon-container-border-hover: var(--main-color);
 
-  --icon-container-i-hover: var(--cyan);
+  --icon-container-i-hover: var(--main-color);
 }
 
 ::-webkit-scrollbar {
@@ -126,7 +141,8 @@ h1 {
 
 #navbar > ul > a:hover {
   background-color: var(--navbar-ul-a-backgorund-hover);
-  border-radius: 25px;
+  border: 2px solid var(--navbar-ul-a-hover);
+  border-radius: 2px;
   color: var(--navbar-ul-a-hover);
 }
 
@@ -156,7 +172,7 @@ h1 {
 
 #skills {
   background-color: var(--skills-background);
-  min-height: 100vh;
+  min-height: 80svh;
   padding: 15px 0;
   text-align: center;
 }
@@ -178,10 +194,6 @@ h1 {
   padding-bottom: 30px;
 }
 
-.skill-icon-section {
-  height: 30%;
-}
-
 .skill-icon-container {
   display: flex;
   background-color: var(--skills-icon-section-fa-solid-background);
@@ -192,6 +204,7 @@ h1 {
 }
 
 .skill-icon-container > .fa-solid {
+  color: white;
   position: relative;
   top: 20px;
   left: 18px;
@@ -211,6 +224,11 @@ h1 {
   line-height: 1.5;
 }
 
+.skill-text-section > p > span {
+  font-family: "Nanum Gothic Coding", monospace;
+  font-style: italic;
+}
+
 .skill-list-section > h3 {
   font-family: "Nanum Gothic Coding", monospace;
 }
@@ -223,7 +241,7 @@ h1 {
 
 #projects {
   background-color: var(--projects-background);
-  height: fit-content;
+  min-height: 150vh;
   padding: 50px 0 100px;
   text-align: center;
 }
@@ -264,7 +282,7 @@ h1 {
 
 #contact {
   background-color: var(--contact-background);
-  height: 80vh;
+  height: 70vh;
   text-align: center;
   color: var(--contact-font);
 }
@@ -278,17 +296,17 @@ h1 {
 }
 
 form {
-  margin: 50px auto;
+  margin: 0 auto;
 }
 
 input,
 textarea {
   display: block;
   border: none;
-  border-radius: 8px;
+  border-radius: 3px;
   margin: 20px auto;
   padding: 10px;
-  width: 400px;
+  width: 500px;
 }
 
 textarea {
@@ -300,15 +318,32 @@ textarea:focus {
   outline: 2px solid var(--input-textarea-outline);
 }
 
+.submit-btn {
+  background-color: var(--submit-btn-background);
+  border-radius: 3px;
+  width: 100px;
+  color: var(--white);
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: var(--darker-green);
+}
+
+.submit-btn:focus {
+  outline: none;
+}
+
 .icon-section {
   display: flex;
   justify-content: center;
-  margin: 100px auto;
+  margin: 50px auto 0;
 }
 
 .icon-container {
   background-color: var(--icon-container-background);
-  border: 1px solid var(--icon-container-border);
+  border: 2px solid var(--icon-container-border);
   border-radius: 10px;
   margin: 0 20px;
   width: 60px;
@@ -328,7 +363,7 @@ textarea:focus {
 
 .icon-container:hover {
   background-color: var(--icon-container-background-hover);
-  border: 1px solid var(--icon-container-border-hover);
+  border: 2px solid var(--icon-container-border-hover);
 }
 
 .icon-container > i:hover {
