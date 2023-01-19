@@ -79,13 +79,20 @@ body {
   background-color: var(--body-background);
   margin: 0;
   padding: 0;
-  font-family: "Fira Code", monospace;
+  font-family: "europa", sans-serif;
   font-weight: 100;
+  word-spacing: 3px;
+  line-height: 1.5;
   color: var(--body-font);
 }
 
-h1 {
+h1,
+h3 {
   color: var(--h1);
+  font-family: "Fira Code", monospace;
+}
+
+h1 {
   font-size: 2.1rem;
 }
 
