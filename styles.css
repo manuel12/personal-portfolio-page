@@ -2,6 +2,61 @@
   box-sizing: border-box;
 }
 
+:root {
+  --black: #222222;
+  --purple: #6e07f3;
+  --cyan: #07ddf3;
+  --light-white: #f5f5f5;
+  --white: #ffffff;
+  --orange: #ffa500;
+
+  /* --body-background: var(--black);
+  --body-font: var(--black);
+  --h1: var(--black);
+
+  --navbar-background: var(--black);
+  --navbar-ul-a-hover: var(--black);
+
+  --skills-background: var(--purple);
+  --skills-icon-section-fa-solid-background: var(--cyan);
+
+  --projects-background: var(--light-white);
+  --contact-background: var(--black);
+  --contact-font: var(--white);
+
+  --input-textarea-outline: var(--orange);
+
+  --icon-container-background: var(--black);
+  --icon-container-border: var(--white);
+  --icon-container-background-hover: var(--white);
+  --icon-container-i-hover: var(--black);
+  */
+
+  --body-background: var(--black);
+  --body-font: var(--black);
+  --h1: var(--black);
+
+  --navbar-background: var(--black);
+  --navbar-ul-a-hover: var(--black);
+
+  --skills-background: var(--purple);
+  --skills-icon-section-fa-solid-background: var(--cyan);
+
+  --projects-background: var(--light-white);
+  --contact-background: var(--black);
+  --contact-font: var(--white);
+
+  --input-textarea-outline: var(--cyan);
+
+  --icon-container-background: var(--black);
+  --icon-container-border: var(--white);
+
+  --icon-container-background-hover: var(--black);
+  --icon-container-border-hover: var(--cyan);
+
+  --icon-container-i-hover: var(--cyan);
+}
+
 ::-webkit-scrollbar {
   border-radius: 15px;
   width: 13px;
@@ -19,22 +74,22 @@
 }
 
 body {
-  background-color: #222222;
+  background-color: var(--body-background);
   margin: 0;
   padding: 0;
   font-family: "Fira Code", monospace;
   font-weight: 100;
-  color: #222222;
+  color: var(--body-font);
 }
 
 h1 {
-  color: #222222;
+  color: var(--h1);
   font-size: 2.1rem;
 }
 
 #navbar {
   position: fixed;
-  background-color: #222222;
+  background-color: var(--navbar-background);
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -63,7 +118,7 @@ h1 {
 #navbar > ul > a:hover {
   background-color: white;
   border-radius: 25px;
-  color: #222222;
+  color: var(--navbar-ul-a-hover);
 }
 
 #welcome-section {
@@ -91,7 +146,7 @@ h1 {
 }
 
 #skills {
-  background-color: #6e07f3;
+  background-color: var(--skills-background);
   min-height: 100vh;
   padding: 15px 0;
   text-align: center;
@@ -120,7 +175,7 @@ h1 {
 }
 
 .skill-icon-section > .fa-solid {
-  background-color: #07ddf3;
+  background-color: var(--skills-icon-section-fa-solid-background);
   border-radius: 50px;
   width: 80px;
   height: 80px;
@@ -152,7 +207,7 @@ h1 {
 }
 
 #projects {
-  background-color: #f5f5f5;
+  background-color: var(--projects-background);
   height: fit-content;
   padding: 50px 0 100px;
   text-align: center;
@@ -193,10 +248,10 @@ h1 {
 }
 
 #contact {
-  background-color: #222222;
+  background-color: var(--contact-background);
   height: 80vh;
   text-align: center;
-  color: white;
+  color: var(--contact-font);
 }
 
 #contact > .contact-container > h1 {
@@ -227,7 +282,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-  outline: 2px solid orange;
+  outline: 2px solid var(--input-textarea-outline);
 }
 
 .icon-section {
@@ -237,8 +292,8 @@ textarea:focus {
 }
 
 .icon-container {
-  background-color: #222222;
-  border: 1px solid white;
+  background-color: var(--icon-container-background);
+  border: 1px solid var(--icon-container-border);
   border-radius: 10px;
   margin: 0 20px;
   width: 60px;
@@ -257,11 +312,12 @@ textarea:focus {
 }
 
 .icon-container:hover {
-  background-color: white;
+  background-color: var(--icon-container-background-hover);
+  border: 1px solid var(--icon-container-border-hover);
 }
 
 .icon-container > i:hover {
-  color: #222222;
+  color: var(--icon-container-i-hover);
 }
 
 @media only screen and (min-width: 768px) {
