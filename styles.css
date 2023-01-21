@@ -117,6 +117,7 @@ h1 {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  z-index: 10;
 }
 
 #navbar > ul {
@@ -132,8 +133,8 @@ h1 {
   border-radius: 25px;
   padding: 5px;
   text-decoration: none;
-  color: white;
   font-size: 1.2rem;
+  color: white;
 
   transition: color 1s;
   transition: background-color 1s;
@@ -141,8 +142,6 @@ h1 {
 
 #navbar > ul > a:hover {
   background-color: var(--navbar-ul-a-backgorund-hover);
-  border: 2px solid var(--navbar-ul-a-hover);
-  border-radius: 2px;
   color: var(--navbar-ul-a-hover);
 }
 
@@ -172,7 +171,7 @@ h1 {
 
 #skills {
   background-color: var(--skills-background);
-  min-height: 80svh;
+  min-height: 80vh;
   padding: 15px 0;
   text-align: center;
 }
@@ -265,8 +264,8 @@ h1 {
 }
 
 .project-tile > a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
 }
 
 .project-tile > a > img {
