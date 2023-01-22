@@ -214,6 +214,7 @@ h1 {
   margin-bottom: 30px;
   font-family: "Nanum Gothic Coding", monospace;
   font-size: 1.8rem;
+  font-style: italic;
   text-decoration: underline;
   text-decoration-color: #00c896;
 }
