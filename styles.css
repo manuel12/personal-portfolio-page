@@ -102,7 +102,7 @@ body {
 }
 
 h1,
-h3 {
+h2 {
   color: var(--h1);
   font-family: "Fira Code", monospace;
 }
@@ -210,10 +210,12 @@ h1 {
   font-size: 2.4rem;
 }
 
-.skill-text-section > h3 {
+.skill-text-section > h2 {
   margin-bottom: 30px;
   font-family: "Nanum Gothic Coding", monospace;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
+  text-decoration: underline;
+  text-decoration-color: #00c896;
 }
 
 .skill-text-section > p {
