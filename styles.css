@@ -165,7 +165,6 @@ h1 {
 
 .about-container {
   margin: 50px auto 10px;
-  padding: 20px 0;
   width: 80%;
 }
 
@@ -187,16 +186,16 @@ h1 {
   text-align: center;
 }
 
-#skills > h1 {
+.skills-container > h1 {
   color: white;
 }
 
-.skills-container {
+.skill-card-container {
   margin: 0 auto;
   width: 80%;
 }
 
-.skill-card {
+.skill-card { 
   background-color: white;
   border-radius: var(--border-radius);
   margin: 20px auto;
@@ -403,7 +402,7 @@ textarea:focus {
     height: fit-content;
   }
 
-  .skills-container {
+  .skill-card-container {
     display: flex;
     width: 90%;
     margin: 0 auto;
@@ -444,7 +443,7 @@ textarea:focus {
   }
 
   .about-container,
-  .skills-container {
+  .skill-card-container {
     width: 80%;
   }
 
