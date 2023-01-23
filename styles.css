@@ -142,6 +142,7 @@ h1 {
 
 #navbar > ul > a:hover {
   background-color: var(--navbar-ul-a-backgorund-hover);
+  text-decoration: underline var(--navbar-ul-a-hover) 2px;
   color: var(--navbar-ul-a-hover);
 }
 
@@ -215,8 +216,7 @@ h1 {
   font-family: "Nanum Gothic Coding", monospace;
   font-size: 1.8rem;
   font-style: italic;
-  text-decoration: underline;
-  text-decoration-color: #00c896;
+  text-decoration: underline var(--action-color) 3px;
 }
 
 .skill-text-section > p {
