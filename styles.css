@@ -116,7 +116,7 @@ h1 {
 #navbar {
   position: fixed;
   background-color: var(--navbar-background);
-  width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: space-around;
   z-index: 10;
@@ -138,7 +138,7 @@ h1 {
   font-size: 1.2rem;
   color: white;
   transition: background-color 0.5s ease-out, text-decoration 0.5s ease-out,
-    color 0.5s ease-outut;
+    color 0.5s ease-out;
 }
 
 #navbar > ul > a:hover {
@@ -293,11 +293,16 @@ h1 {
   color: var(--contact-font);
 }
 
-#contact > .contact-container > h1 {
+.contact-container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.contact-container > h1 {
   color: white;
 }
 
-#contact > .contact-container > p {
+.contact-container > p {
   font-size: 1.1rem;
 }
 
@@ -312,7 +317,7 @@ textarea {
   border-radius: var(--border-radius);
   margin: 20px auto;
   padding: 10px;
-  width: 500px;
+  width: 100%;
 }
 
 textarea {
