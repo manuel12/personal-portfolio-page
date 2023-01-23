@@ -345,7 +345,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-  outline: 2px solid var(--input-textarea-outline);
+  outline: 1px solid var(--input-textarea-outline);
 }
 
 .submit-btn {
