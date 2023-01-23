@@ -136,15 +136,14 @@ h1 {
   text-decoration: none;
   font-size: 1.2rem;
   color: white;
-
-  transition: color 1s;
-  transition: background-color 1s;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
 }
 
 #navbar > ul > a:hover {
   background-color: var(--navbar-ul-a-backgorund-hover);
   text-decoration: underline var(--navbar-ul-a-hover) 2px;
   color: var(--navbar-ul-a-hover);
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
 }
 
 #welcome-section {
@@ -325,13 +324,16 @@ textarea:focus {
   background-color: var(--submit-btn-background);
   border-radius: var(--border-radius);
   width: 100px;
-  color: var(--white);
   font-size: 1.3rem;
+  color: var(--white);
   cursor: pointer;
+  transition: background-color 0.5s ease-out, color 0.5s ease-out;
 }
 
 .submit-btn:hover {
-  background-color: var(--darker-green);
+  background-color: var(--white);
+  color: var(--submit-btn-background);
+  transition: background-color 0.5s ease-out, color 0.5s ease-out;
 }
 
 .submit-btn:focus {
@@ -352,7 +354,7 @@ textarea:focus {
   width: 60px;
   height: 60px;
 
-  transition: background-color 0.5s;
+  transition: background-color 0.5s ease-out;
 }
 
 .icon-container > i {
@@ -361,7 +363,7 @@ textarea:focus {
   font-size: 40px;
   color: white;
 
-  transition: color 0.5s;
+  transition: color 0.5s ease-out;
 }
 
 .icon-container:hover {
