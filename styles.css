@@ -164,6 +164,8 @@ h1 {
 }
 
 .about-container {
+  position: relative;
+  top: 100px;
   margin: 50px auto 10px;
   width: 80%;
 }
