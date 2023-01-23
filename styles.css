@@ -197,7 +197,7 @@ h1 {
   width: 80%;
 }
 
-.skill-card { 
+.skill-card {
   background-color: white;
   border-radius: var(--border-radius);
   margin: 20px auto;
@@ -327,6 +327,7 @@ textarea {
   margin: 20px auto;
   padding: 10px;
   width: 100%;
+  font-family: "europa", sans-serif;
 }
 
 textarea {
