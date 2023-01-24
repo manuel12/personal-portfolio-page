@@ -215,6 +215,7 @@
       const navBarLinks = document.querySelectorAll(".navbar-list > a");
       navBarLinks.forEach((navbarLink) => {
         navbarLink.onclick = () => {
+          hamburgerBtn.classList.remove("active");
           navbarListElem.classList.remove("navbar-list-active");
         };
       });
