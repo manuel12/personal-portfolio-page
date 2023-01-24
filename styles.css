@@ -53,7 +53,7 @@
   --h1: var(--dark-blue);
 
   --navbar-background: var(--main-color);
-  --navbar-ul-a-backgorund-hover: var(--figma-green);
+  --navbar-ul-a-backgorund-hover: var(---main-color);
   --navbar-ul-a-hover: var(--action-color);
 
   --skills-background: var(--main-color);
@@ -114,53 +114,12 @@ h1 {
   font-size: 2.1rem;
 }
 
-#navbar {
-  position: fixed;
-  top: 0;
-  background-color: var(--navbar-background);
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: space-around;
-  z-index: 10;
-}
-
-#navbar > ul {
-  margin: 5px auto;
-  width: 100%;
-  max-width: 700px;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-}
-
-#navbar > ul > a {
-  box-sizing: content-box;
-  padding: 5px;
-  text-decoration: underline var(--main-color) 2px;
-  font-size: 1.2rem;
-  color: white;
-  transition: background-color 0.5s ease-out, text-decoration 0.5s ease-out,
-    color 0.5s ease-out;
-}
-
-#navbar > ul > a:hover {
-  box-sizing: content-box;
-  background-color: var(--navbar-ul-a-backgorund-hover);
-  text-decoration: underline var(--navbar-ul-a-hover) 2px;
-  color: var(--navbar-ul-a-hover);
-  transition: background-color 0.5s ease-out, text-decoration 0.5s ease-out,
-    color 0.5s ease-out;
-}
-
 #hamburger-btn {
-  position: relative;
-  top: 400px;
+  display: block;
   background-color: var(--action-color);
   border-radius: var(--border-radius);
   border: none;
 
-  display: block;
   width: 75px;
   height: 45px;
 }
@@ -170,6 +129,47 @@ h1 {
   top: 2px;
   left: 0;
   font-size: 1.8rem;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  background-color: var(--navbar-background);
+  width: 100%;
+  height: 50px;
+  /* display: flex; */
+  justify-content: space-around;
+  z-index: 10;
+}
+
+#navbar > ul {
+  margin: 5px auto;
+  width: 100%;
+  max-width: 700px;
+  padding: 0;
+  justify-content: space-around;
+}
+
+#navbar > ul > a {
+  box-sizing: content-box;
+  background-color: var(--navbar-background);
+  display: block;
+  padding: 5px;
+  width: 100%;
+
+  text-decoration: underline var(--main-color) 2px;
+  font-size: 1.2rem;
+  color: white;
+  transition: background-color 0.5s ease-out, text-decoration 0.5s ease-out,
+    color 0.5s ease-out;
+}
+
+#navbar > ul > a:hover {
+  box-sizing: content-box;
+  text-decoration: underline var(--navbar-ul-a-hover) 2px;
+  color: var(--navbar-ul-a-hover);
+  transition: text-decoration 0.5s ease-out,
+    color 0.5s ease-out;
 }
 
 #welcome-section {
