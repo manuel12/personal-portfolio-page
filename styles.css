@@ -122,6 +122,7 @@ h1 {
 
   width: 75px;
   height: 45px;
+  cursor: pointer;
 }
 
 #hamburger-btn > i {
@@ -143,7 +144,9 @@ h1 {
 }
 
 .navbar-list {
-  display: none;
+  position: relative;
+  top: -500%;
+  display: block;
   list-style-type: none;
   margin: 5px auto;
   width: 100%;
@@ -151,35 +154,12 @@ h1 {
   padding: 0;
   text-align: center;
 
-  transition: display 1s ease-out;
+  z-index: -1;
+  transition: 0.25s ease-out;
 }
 
-.navbar-list-opened {
-  display: block;
-  animation: open 0.25s;
-}
-
-@keyframes open {
-  0% {
-    transform: translateY(-500px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.navbar-list-closed {
-  display: none;
-  animation: close 0.25s;
-}
-
-@keyframes close {
-  0% {
-    transform: translateY(-500px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+.navbar-list-active {
+  top: 0;
 }
 
 .navbar-list > a {
