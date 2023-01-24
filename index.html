@@ -204,11 +204,17 @@
     </section>
     <script>
       const hamburgerBtn = document.getElementById("hamburger-btn");
+      const navbarListElem = document.getElementsByClassName("navbar-list")[0];
       hamburgerBtn.onclick = () => {
-        const navbarListElem =
-          document.getElementsByClassName("navbar-list")[0];
-          navbarListElem.classList.toggle("navbar-list-active");
+        navbarListElem.classList.toggle("navbar-list-active");
       };
+
+      const navBarLinks = document.querySelectorAll(".navbar-list > a");
+      navBarLinks.forEach((navbarLink) => {
+        navbarLink.onclick = () => {
+          navbarListElem.classList.remove("navbar-list-active");
+        };
+      });
     </script>
   </body>
 </html>
