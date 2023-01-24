@@ -13,7 +13,9 @@
   <body>
     <nav id="navbar">
       <button id="hamburger-btn">
-        <i class="fa-solid fa-bars"></i>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </button>
       <ul class="navbar-list">
         <a href="#welcome-section">ABOUT</a>
@@ -206,6 +208,7 @@
       const hamburgerBtn = document.getElementById("hamburger-btn");
       const navbarListElem = document.getElementsByClassName("navbar-list")[0];
       hamburgerBtn.onclick = () => {
+        hamburgerBtn.classList.toggle("active");
         navbarListElem.classList.toggle("navbar-list-active");
       };
 
