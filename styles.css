@@ -320,7 +320,7 @@ li {
 
 #contact {
   background-color: var(--contact-background);
-  height: 75vh;
+  height: 82vh;
   padding: var(--vertical-padding) 0;
 
   text-align: center;
@@ -393,7 +393,7 @@ textarea:focus {
 .icon-section {
   display: flex;
   justify-content: center;
-  padding: 40px 0 80px;
+  padding: 40px 0 30px;
 }
 
 .icon-container {
