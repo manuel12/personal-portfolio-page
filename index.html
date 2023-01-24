@@ -207,15 +207,7 @@
       hamburgerBtn.onclick = () => {
         const navbarListElem =
           document.getElementsByClassName("navbar-list")[0];
-        const currentlyOpened =
-          navbarListElem.classList.value.includes("opened");
-        if (currentlyOpened) {
-          navbarListElem.classList.remove("navbar-list-opened");
-          navbarListElem.classList.add("navbar-list-closed");
-        } else {
-          navbarListElem.classList.add("navbar-list-opened");
-          navbarListElem.classList.remove("navbar-list-closed");
-        }
+          navbarListElem.classList.toggle("navbar-list-active");
       };
     </script>
   </body>
