@@ -6,47 +6,11 @@
   --border-radius: 30px;
   --vertical-padding: 15px;
 
-  --black: #222222;
-  --lighter-black: #252934;
-
-  --light-white: #f5f5f5;
   --white: #ffffff;
-
-  --greyish: #626997;
   --dark-blue: #141c3a;
-
-  --purple: #6e07f3;
-  --cyan: #07ddf3;
-  --orange: #ffa500;
-  --red: #fb3636;
-
-  --green: #61ff65;
-  --darker-green: #4ac64e;
 
   --main-color: #474747;
   --action-color: #00c896;
-
-  /* --body-background: var(--black);
-  --body-font: var(--black);
-  --h1: var(--black);
-
-  --navbar-background: var(--black);
-  --navbar-ul-a-hover: var(--black);
-
-  --skills-background: var(--purple);
-  --skills-icon-section-fa-solid-background: var(--cyan);
-
-  --projects-background: var(--light-white);
-  --contact-background: var(--black);
-  --contact-font: var(--white);
-
-  --input-textarea-outline: var(--orange);
-
-  --icon-container-background: var(--black);
-  --icon-container-border: var(--white);
-  --icon-container-background-hover: var(--white);
-  --icon-container-i-hover: var(--black);
-  */
 
   --body-background: var(--main-color);
   --body-font: var(--dark-blue);
@@ -91,6 +55,10 @@
   border-radius: var(--border-radius);
   background: #888;
   box-shadow: 10px 15px 5px #4d4d4d inset;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -170,7 +138,7 @@ li {
   margin: 5px auto;
 
   width: 100%;
-  max-width: 700px;
+  /* max-width: 700px; */
   padding: 0;
   text-align: center;
 
@@ -459,6 +427,23 @@ textarea:focus {
 }
 
 @media only screen and (min-width: 768px) {
+  #navbar {
+    height: 40px;
+  }
+
+  #hamburger-btn {
+    display: none;
+  }
+
+  .navbar-list {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+
   #welcome-section {
     min-height: 100vh;
     height: fit-content;
