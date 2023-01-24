@@ -142,16 +142,47 @@ h1 {
   z-index: 10;
 }
 
-#navbar > ul {
+.navbar-list {
   display: none;
+  list-style-type: none;
   margin: 5px auto;
   width: 100%;
   max-width: 700px;
   padding: 0;
-  justify-content: space-around;
+  text-align: center;
+
+  transition: display 1s ease-out;
 }
 
-#navbar > ul > a {
+.navbar-list-opened {
+  display: block;
+  animation: open 0.25s;
+}
+
+@keyframes open {
+  0% {
+    transform: translateY(-500px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.navbar-list-closed {
+  display: none;
+  animation: close 0.25s;
+}
+
+@keyframes close {
+  0% {
+    transform: translateY(-500px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.navbar-list > a {
   box-sizing: content-box;
   background-color: var(--navbar-background);
   display: block;
@@ -165,12 +196,11 @@ h1 {
     color 0.5s ease-out;
 }
 
-#navbar > ul > a:hover {
+.navbar-list > a:hover {
   box-sizing: content-box;
   text-decoration: underline var(--navbar-ul-a-hover) 2px;
   color: var(--navbar-ul-a-hover);
-  transition: text-decoration 0.5s ease-out,
-    color 0.5s ease-out;
+  transition: text-decoration 0.5s ease-out, color 0.5s ease-out;
 }
 
 #welcome-section {
