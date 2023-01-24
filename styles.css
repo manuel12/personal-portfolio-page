@@ -62,7 +62,6 @@ html {
 }
 
 body {
-  background-color: var(--body-background);
   margin: 0;
   padding: 0;
   font-family: "europa", sans-serif;
@@ -442,7 +441,6 @@ textarea:focus {
     display: flex;
     justify-content: space-evenly;
   }
-
 
   #welcome-section {
     min-height: 100vh;
