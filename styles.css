@@ -11,34 +11,6 @@
 
   --main-color: #474747;
   --action-color: #00c896;
-
-  --body-background: var(--main-color);
-  --body-font: var(--dark-blue);
-  --h1: var(--dark-blue);
-
-  --navbar-background: var(--main-color);
-  --navbar-ul-a-backgorund-hover: var(---main-color);
-  --navbar-ul-a-hover: var(--action-color);
-
-  --skills-background: var(--main-color);
-  --skills-icon-section-fa-solid-background: var(--action-color);
-
-  --projects-background: var(--white);
-
-  --contact-background: var(--main-color);
-  --contact-font: var(--white);
-
-  --input-textarea-outline: var(--action-color);
-
-  --submit-btn-background: var(--action-color);
-
-  --icon-container-background: var(--main-color);
-  --icon-container-border: var(--white);
-
-  --icon-container-background-hover: var(--white);
-  --icon-container-border-hover: var(--main-color);
-
-  --icon-container-i-hover: var(--main-color);
 }
 
 ::-webkit-scrollbar {
@@ -68,12 +40,12 @@ body {
   font-weight: 100;
   word-spacing: 3px;
   line-height: 1.5;
-  color: var(--body-font);
+  color: var(--dark-blue);
 }
 
 h1,
 h2 {
-  color: var(--h1);
+  color: var(--dark-blue);
   font-family: "Fira Code", monospace;
 }
 
@@ -122,22 +94,20 @@ li {
 #navbar {
   position: fixed;
   top: 0;
-  background-color: var(--navbar-background);
+  background-color: var(--main-color);
   width: 100%;
   height: 60px;
   padding: 8px 0;
-  /* justify-content: space-around; */
   z-index: 10;
 }
 
 .navbar-list {
-  background-color: var(--navbar-background);
+  background-color: var(--main-color);
   position: relative;
   top: -500%;
   margin: 5px auto;
 
   width: 100%;
-  /* max-width: 700px; */
   padding: 0;
   text-align: center;
 
@@ -164,8 +134,8 @@ li {
 
 .navbar-list > a:hover {
   box-sizing: content-box;
-  text-decoration: underline var(--navbar-ul-a-hover) 2px;
-  color: var(--navbar-ul-a-hover);
+  text-decoration: underline var(--action-color) 2px;
+  color: var(--action-color);
   transition: text-decoration 0.5s ease-out, color 0.5s ease-out;
 }
 
@@ -199,7 +169,7 @@ li {
 }
 
 #skills {
-  background-color: var(--skills-background);
+  background-color: var(--main-color);
   min-height: 80vh;
   padding: var(--vertical-padding) 0;
   text-align: center;
@@ -224,7 +194,7 @@ li {
 
 .skill-icon-container {
   display: flex;
-  background-color: var(--skills-icon-section-fa-solid-background);
+  background-color: var(--action-color);
   border-radius: 50px;
   width: 70px;
   height: 70px;
@@ -278,7 +248,7 @@ li {
 }
 
 #projects {
-  background-color: var(--projects-background);
+  background-color: var(--white);
   min-height: 150vh;
   padding: var(--vertical-padding) 0;
   text-align: center;
@@ -319,12 +289,12 @@ li {
 }
 
 #contact {
-  background-color: var(--contact-background);
+  background-color: var(--main-color);
   height: 82vh;
   padding: var(--vertical-padding) 0;
 
   text-align: center;
-  color: var(--contact-font);
+  color: var(--white);
 }
 
 .contact-container {
@@ -362,13 +332,13 @@ textarea {
 
 input:focus,
 textarea:focus {
-  outline: 1px solid var(--input-textarea-outline);
+  outline: 1px solid var(--action-color);
 }
 
 .submit-btn {
-  background-color: var(--submit-btn-background);
+  background-color: var(--action-color);
   border: 2px solid;
-  border-color: var(--submit-btn-background);
+  border-color: var(--action-color);
   border-radius: var(--border-radius);
   width: 100px;
   font-size: 1.3rem;
@@ -380,8 +350,8 @@ textarea:focus {
 
 .submit-btn:hover {
   background-color: var(--main-color);
-  border-color: var(--submit-btn-background);
-  color: var(--submit-btn-background);
+  border-color: var(--action-color)
+  color: var(--action-color);
   transition: background-color 0.5s ease-out, border-color 0.5s ease-out,
     color 0.5s ease-out;
 }
@@ -397,8 +367,8 @@ textarea:focus {
 }
 
 .icon-container {
-  background-color: var(--icon-container-background);
-  border: 2px solid var(--icon-container-border);
+  background-color: var(--main-color);
+  border: 2px solid var(--white);
   border-radius: var(--border-radius);
   margin: 0 20px;
   width: 60px;
@@ -417,12 +387,12 @@ textarea:focus {
 }
 
 .icon-container:hover {
-  background-color: var(--icon-container-background-hover);
-  border: 2px solid var(--icon-container-border-hover);
+  background-color: var(--white);
+  border: 2px solid var(--main-color);
 }
 
 .icon-container > i:hover {
-  color: var(--icon-container-i-hover);
+  color: var(--main-color);
 }
 
 @media only screen and (min-width: 768px) {
