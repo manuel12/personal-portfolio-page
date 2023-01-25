@@ -3,6 +3,7 @@
 }
 
 :root {
+
   --border-radius: 30px;
   --vertical-padding: 15px;
 
@@ -36,7 +37,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "europa", sans-serif;
+  font-family: "Fira Code", monospace;
   font-weight: 100;
   word-spacing: 3px;
   line-height: 1.5;
@@ -46,7 +47,6 @@ body {
 h1,
 h2 {
   color: var(--dark-blue);
-  font-family: "Fira Code", monospace;
 }
 
 h1 {
@@ -64,8 +64,8 @@ li {
   border: none;
 
   margin-left: 5px;
-  width: 75px;
-  height: 45px;
+  width: 50px;
+  height: 30px;
   cursor: pointer;
 }
 
@@ -74,8 +74,8 @@ li {
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   background-color: white;
 }
 
@@ -96,15 +96,15 @@ li {
   top: 0;
   background-color: var(--main-color);
   width: 100%;
-  height: 60px;
-  padding: 8px 0;
+  height: 40px;
+  padding: 5px 0;
   z-index: 10;
 }
 
 .navbar-list {
   background-color: var(--main-color);
   position: relative;
-  top: -500%;
+  top: -200px;
   margin: 5px auto;
 
   width: 100%;
@@ -119,7 +119,7 @@ li {
   top: 0;
 }
 
-.navbar-list > a {
+.navbar-link {
   box-sizing: content-box;
   display: block;
   padding: 5px;
@@ -132,7 +132,7 @@ li {
     color 0.5s ease-out;
 }
 
-.navbar-list > a:hover {
+.navbar-link:hover {
   box-sizing: content-box;
   text-decoration: underline var(--action-color) 2px;
   color: var(--action-color);
@@ -217,34 +217,23 @@ li {
   left: 17px;
 }
 
-.skill-text-section > h2 {
+.skill-text-section-heading {
   margin-bottom: 30px;
-  font-family: "Nanum Gothic Coding", monospace;
   font-size: 1.8rem;
   font-style: italic;
-  text-decoration: underline var(--action-color) 3px;
+  text-decoration: 3px underline var(--action-color);
 }
 
-.skill-text-section > p {
+.skill-text-section-content {
   margin: 0 auto;
   width: 80%;
   font-size: 1.1rem;
   line-height: 1.5;
 }
 
-.skill-text-section > p > span {
-  font-family: "Nanum Gothic Coding", monospace;
+.skill {
   font-style: italic;
-}
-
-.skill-list-section > h3 {
-  font-family: "Nanum Gothic Coding", monospace;
-}
-
-.skill-list-section > p {
-  margin: 0 auto;
-  width: 80%;
-  font-size: 1.1rem;
+  text-decoration: 2px underline var(--action-color);
 }
 
 #projects {
@@ -282,10 +271,6 @@ li {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.project-name > p {
-  margin: 0;
 }
 
 #contact {
