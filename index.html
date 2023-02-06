@@ -11,8 +11,8 @@
     <title>Manuel Pineda</title>
   </head>
   <body>
-    <nav id="navbar">
-      <button id="hamburger-btn">
+    <nav class="navbar" id="navbar">
+      <button class="hamburger-btn id="hamburger-btn">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
@@ -24,7 +24,7 @@
         <a class="navbar-link" href="#contact">CONTACT</a>
       </ul>
     </nav>
-    <section id="welcome-section">
+    <section class="welcome-section" id="welcome-section">
       <div class="about-container">
         <h1 class="about-heading">
           Manuel Pineda<br />Front-end, <br class="about-line-break" />Back-end
@@ -40,7 +40,7 @@
         </p>
       </div>
     </section>
-    <section id="skills">
+    <section class="skills" id="skills">
       <div class="skills-container">
         <h1 class="skills-heading">Skills</h1>
         <div class="skill-card-container">
@@ -90,12 +90,11 @@
             <div class="skill-text-section">
               <h2 class="skill-text-section-heading">Tests</h2>
               <p class="skill-text-section-content">
-                My software developement journey began with testing. I have
-                years of experience as QA of a variety of applications whether
-                web pages, web applications and video games. I have also
-                extensive experience on creating test suites for web pages and
-                web applications, automating testing processes and creating
-                function, UI, API, and Visual tests. For this I currently use
+                I have years of experience as QA of a variety of applications
+                from web pages, web applications and video games. This includes
+                extensive experience creating test suites for web pages and web
+                applications, automating testing processes and creating
+                functional, UI, API, and Visual tests. For this I currently use
                 <span class="skill">JS</span>,
                 <span class="skill">Cypress</span> and
                 <span class="skill">Cypress Image Snapshot</span>.
@@ -105,7 +104,7 @@
         </div>
       </div>
     </section>
-    <section id="projects">
+    <section class="projects" id="projects">
       <div class="projects-container">
         <h1 class="projects-heading">My Projects</h1>
         <div class="projects-grid">
@@ -113,44 +112,62 @@
             <a
               href="https://github.com/manuel12/django-expense-tracker-public"
               target="_blank"
-              ><img src="images/expense-tracker.png" />
+            >
+              <span>Expense Tracker</span>
+              <img src="images/expense-tracker.png" />
             </a>
           </div>
           <div class="project-tile">
             <a
               href="https://github.com/manuel12/motivation-vault"
               target="_blank"
-              ><img src="images/motivation-vault.png" />
+              >
+              <span>Motivation Vault</span>
+              <img src="images/motivation-vault.png" />
             </a>
           </div>
+
           <div class="project-tile">
             <a href="https://github.com/manuel12/media-ratings" target="_blank"
-              ><img src="images/media-ratings.png" />
+              >
+              <span>Media Ratings</span>
+              <img src="images/media-ratings.png" />
             </a>
           </div>
           <div class="project-tile">
             <a
               href="https://github.com/manuel12/custom-css-library"
               target="_blank"
-              ><img src="images/custom-library.png" />
+              >
+              <span>Custom Library</span>
+              <img src="images/custom-library.png" />
             </a>
           </div>
           <div class="project-tile">
             <a
               href="https://github.com/manuel12/technical-documentation-page"
               target="_blank"
-              ><img src="images/technical-documentation-page.png" />
+              >
+              <span>Custom Library - Documentation</span>
+              <img src="images/technical-documentation-page.png" />
             </a>
           </div>
+
+
+
           <div class="project-tile">
             <a href="https://github.com/manuel12/landing-page" target="_blank"
-              ><img src="images/landing-page.png" />
+              >
+              <span>Landing Page</span>
+              <img src="images/landing-page.png" />
             </a>
           </div>
 
           <div class="project-tile">
             <a href="https://github.com/manuel12/quote-project" target="_blank"
-              ><img src="images/random-quote-generator.png" />
+              >
+              <span>Random Quote Generator</span>
+              <img src="images/random-quote-generator.png" />
             </a>
           </div>
 
@@ -158,19 +175,23 @@
             <a
               href="https://github.com/manuel12/25-plus-5-clock"
               target="_blank"
-              ><img src="images/25_plus_5_clock.png" />
+              >
+              <span>25 + 5 Clock</span>
+              <img src="images/25_plus_5_clock.png" />
             </a>
           </div>
 
           <div class="project-tile">
             <a href="https://github.com/manuel12/js-calculator" target="_blank"
-              ><img src="images/js-calculator.png" />
+              >
+              <span>JS Calculator</span>
+              <img src="images/js-calculator.png" />
             </a>
           </div>
         </div>
       </div>
     </section>
-    <section id="contact">
+    <section class="contact" id="contact">
       <div class="contact-container">
         <h1>Contact</h1>
         <p>Do you want to work together?</p>
@@ -223,6 +244,8 @@
           navbarListElem.classList.remove("navbar-list-active");
         };
       });
+
+      const projectTile = document.querySelectorAll(".project-tile");
     </script>
   </body>
 </html>
