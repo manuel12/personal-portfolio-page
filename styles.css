@@ -3,7 +3,6 @@
 }
 
 :root {
-
   --border-radius: 30px;
   --vertical-padding: 15px;
 
@@ -57,7 +56,7 @@ li {
   list-style-type: none;
 }
 
-#hamburger-btn {
+.hamburger-btn {
   display: block;
   background-color: var(--action-color);
   border-radius: var(--border-radius);
@@ -79,19 +78,19 @@ li {
   background-color: white;
 }
 
-#hamburger-btn.active .bar:nth-child(2) {
+.hamburger-btn.active .bar:nth-child(2) {
   opacity: 0;
 }
 
-#hamburger-btn.active .bar:nth-child(1) {
+.hamburger-btn.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
 
-#hamburger-btn.active .bar:nth-child(3) {
+.hamburger-btn.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-#navbar {
+.navbar {
   position: fixed;
   top: 0;
   background-color: var(--main-color);
@@ -139,7 +138,7 @@ li {
   transition: text-decoration 0.5s ease-out, color 0.5s ease-out;
 }
 
-#welcome-section {
+.welcome-section {
   background-color: white;
   margin: 50px auto 10px;
   width: 100%;
@@ -154,7 +153,7 @@ li {
   position: relative;
   top: 100px;
   margin: 50px auto 120px;
-  width: 80%;
+  width: 90%;
 }
 
 .about-heading {
@@ -168,11 +167,16 @@ li {
   line-height: 1.8rem;
 }
 
-#skills {
+.skills {
   background-color: var(--main-color);
   min-height: 80vh;
   padding: var(--vertical-padding) 0;
   text-align: center;
+}
+
+.skills-container {
+  margin: 0 auto;
+  width: 90%;
 }
 
 .skills-container > h1 {
@@ -181,7 +185,7 @@ li {
 
 .skill-card-container {
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
 }
 
 .skill-card {
@@ -236,7 +240,7 @@ li {
   text-decoration: 2px underline var(--action-color);
 }
 
-#projects {
+.projects {
   background-color: var(--white);
   min-height: 150vh;
   padding: var(--vertical-padding) 0;
@@ -245,7 +249,7 @@ li {
 
 .projects-container {
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
 }
 
 .projects-grid {
@@ -254,16 +258,34 @@ li {
 }
 
 .project-tile {
-  background-color: white;
+  background-color: var(--action-color);
   border-radius: var(--border-radius);
   width: 95%;
   max-width: 450px;
   margin: 0 auto 20px;
+
+  transition: all 0.25s ease-in-out;
+}
+
+.project-tile:hover {
+  transform: scale(1.2);
 }
 
 .project-tile > a {
   color: white;
   text-decoration: none;
+  text-align: center;
+}
+
+.project-tile > a > span {
+  position: fixed;
+  top: 100px;
+  left: 50px;
+  font-size: 1.6rem;
+  color: black;
+
+  z-index: -1;
+  transition: all 0.25s ease-in-out;
 }
 
 .project-tile > a > img {
@@ -271,9 +293,20 @@ li {
   width: 100%;
   height: 100%;
   object-fit: cover;
+
+  transition: all 0.25s ease-in-out;
 }
 
-#contact {
+.project-tile:hover > a > span {
+  color: white;
+  z-index: 1;
+}
+
+.project-tile:hover > a > img {
+  opacity: 0.3;
+}
+
+.contact {
   background-color: var(--main-color);
   height: 82vh;
   padding: var(--vertical-padding) 0;
@@ -284,7 +317,7 @@ li {
 
 .contact-container {
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
 }
 
 .contact-container > h1 {
@@ -335,7 +368,7 @@ textarea:focus {
 
 .submit-btn:hover {
   background-color: var(--main-color);
-  border-color: var(--action-color)
+  border-color: var(--action-color);
   color: var(--action-color);
   transition: background-color 0.5s ease-out, border-color 0.5s ease-out,
     color 0.5s ease-out;
@@ -381,11 +414,11 @@ textarea:focus {
 }
 
 @media only screen and (min-width: 768px) {
-  #navbar {
+  .navbar {
     height: 40px;
   }
 
-  #hamburger-btn {
+  .hamburger-btn {
     display: none;
   }
 
@@ -397,14 +430,14 @@ textarea:focus {
     justify-content: space-evenly;
   }
 
-  #welcome-section {
+  .welcome-section {
     min-height: 100vh;
     height: fit-content;
   }
 
   .skill-card-container {
     display: flex;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -427,7 +460,7 @@ textarea:focus {
 
 @media only screen and (min-width: 992px) {
   .projects-grid {
-    grid-template-columns: 320px 320px 320px;
+    grid-template-columns: 32% 32% 32%;
     grid-template-rows: 270px 270px 270px;
     grid-gap: 1rem;
   }
@@ -443,14 +476,16 @@ textarea:focus {
   }
 
   .about-container,
-  .skill-card-container {
+  .skills-container,
+  .projects-container,
+  .contact-container {
     width: 80%;
   }
 
   .projects-grid {
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 31% 31% 31%;
     grid-template-rows: 290px 290px 290px;
-    grid-gap: 1rem;
+    grid-gap: 1.3rem;
   }
 
   .project-tile {
