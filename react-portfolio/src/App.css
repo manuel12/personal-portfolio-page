@@ -1,38 +1,59 @@
+:root {
+  --border-radius: 30px;
+  --vertical-padding: 15px;
+  --white: #ffffff;
+  --dark-blue: #141c3a;
+  --main-color: #474747;
+  --action-color: #00c896;
+}
+
+::-webkit-scrollbar {
+  border-radius: var(--border-radius);
+  width: 13px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: var(--border-radius);
+  background: #888;
+  box-shadow: 10px 15px 5px #4d4d4d inset;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Code", monospace;
+  font-weight: 100;
+  word-spacing: 3px;
+  line-height: 1.5;
+  color: var(--dark-blue);
+}
+
+div {
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  color: var(--dark-blue);
+}
+
+h1 {
+  font-size: 2.1rem;
+}
+
+li {
+  list-style-type: none;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
