@@ -82,3 +82,9 @@
     width: 31%;
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .skills-container {
+    width: 80%;
+  }
+}
