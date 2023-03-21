@@ -1,10 +1,12 @@
 :root {
   --border-radius: 30px;
   --vertical-padding: 15px;
-  --white: #ffffff;
-  --dark-blue: #141c3a;
-  --main-color: #474747;
-  --action-color: #00c896;
+  --white: #fff;
+  --font-color: #333;
+  --main-color: #fff;
+  --action-color: #00ff80;
+
+  --action-color-light: #84ffa9;
 }
 
 ::-webkit-scrollbar {
