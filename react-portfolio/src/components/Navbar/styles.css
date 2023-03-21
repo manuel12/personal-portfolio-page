@@ -1,94 +1,46 @@
-.hamburger-btn {
-  display: block;
-  background-color: var(--action-color);
-  border-radius: var(--border-radius);
-  border: none;
-  margin-left: 5px;
-  width: 50px;
-  height: 30px;
-  cursor: pointer;
+a {
+  max-width: 200px;
+  text-decoration: none;
+  border-bottom: 2px solid white !important;
+  color: var(--font-color);
 }
 
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  transition: all 0.25s ease-in-out;
-  background-color: white;
+a:hover {
+  border-bottom: 1px solid var(--action-color) !important;
 }
 
-.hamburger-btn.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger-btn.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-
-.hamburger-btn.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
+.hamburger-button {
+  color: var(--action-color-light);
 }
 
 .navbar {
   position: fixed;
   top: 0;
-  background-color: var(--main-color);
+  background-color: var(--main-color) !important;
   width: 100%;
-  height: 40px;
   padding: 5px 0;
   z-index: 10;
 }
 
-.navbar-list {
-  background-color: var(--main-color);
-  position: relative;
-  top: -200px;
-  margin: 5px auto;
+.toolbar {
+  height: 60px;
+}
+
+.navbar-buttons-container {
+  display: flex;
+  justify-content: space-around;
   width: 100%;
-  padding: 0;
-  text-align: center;
-  z-index: -1;
-  transition: 0.25s ease-in-out;
 }
 
-.navbar-list-active {
-  top: 0;
+.navbar-button {
+  background-color: white !important;
+  border: none !important;
+  width: 150px;
+  height: 50px;
+  font-size: 24px !important;
+  color: var(--font-color) !important;
 }
 
-.navbar-link {
-  box-sizing: content-box;
-  display: block;
-  padding: 5px;
-  width: 100%;
-  text-decoration: underline var(--main-color) 2px;
-  font-size: 1.2rem;
-  color: white;
-  transition: background-color 0.5s ease-out, text-decoration 0.5s ease-out,
-    color 0.5s ease-out;
-}
-
-.navbar-link:hover {
-  box-sizing: content-box;
-  text-decoration: underline var(--action-color) 2px;
-  color: var(--action-color);
-  transition: text-decoration 0.5s ease-out, color 0.5s ease-out;
-}
-
-@media only screen and (min-width: 768px) {
-  .navbar {
-    height: 40px;
-  }
-
-  .hamburger-btn {
-    display: none;
-  }
-
-  .navbar-list {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-  }
+.navbar-menu-item {
+  text-transform: capitalize;
 }
