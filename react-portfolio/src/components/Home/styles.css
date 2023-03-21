@@ -1,0 +1,40 @@
+.welcome-section {
+  background-color: white;
+  margin: 50px auto 10px;
+  width: 100%;
+  min-height: 100vh;
+  height: fit-content;
+  padding: var(--vertical-padding) 0;
+  text-align: center;
+}
+
+.about-container {
+  position: relative;
+  top: 100px;
+  margin: 50px auto 120px;
+  width: 90%;
+}
+
+.about-heading {
+  margin: 50px auto;
+  font-size: 2.1rem;
+}
+
+.about-text {
+  margin: 20px auto;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .welcome-section {
+    min-height: 100vh;
+    height: fit-content;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .about-line-break {
+    display: none;
+  }
+}
