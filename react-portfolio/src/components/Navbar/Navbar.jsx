@@ -45,6 +45,7 @@ const Navbar = () => {
               </IconButton>
 
               <Menu
+                className="hamburger-menu"
                 anchorEl={anchorElNav}
                 anchorOrigin={{
                   vertical: "bottom",
