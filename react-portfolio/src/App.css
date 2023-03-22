@@ -5,8 +5,11 @@
   --font-color: #333;
   --main-color: #fff;
   --main-color-light: #f0f0f0;
-  --action-color: #00ff80;
+  --action-color: #1aff8c;
   --action-color-light: #84ffa9;
+  --background-color: #00ce3b;
+  --darker-background-color: #009916;
+  --darkest-background-color: #003000;
 }
 
 ::-webkit-scrollbar {
