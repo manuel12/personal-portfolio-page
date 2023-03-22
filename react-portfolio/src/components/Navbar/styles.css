@@ -1,12 +1,7 @@
 .navbar a {
   max-width: 200px;
   text-decoration: none;
-  border-bottom: 2px solid white !important;
   color: var(--font-color);
-}
-
-.navbar a:hover {
-  border-bottom: 1px solid var(--action-color) !important;
 }
 
 .hamburger-button {
@@ -22,8 +17,18 @@
   z-index: 10;
 }
 
-.toolbar {
-  height: 60px;
+.MuiToolbar-root {
+  min-height: 50px !important;
+}
+
+.MuiMenu-paper {
+  border-radius: 15px !important;
+}
+
+.MuiMenu-paper a {
+  text-decoration: none !important;
+  text-decoration: none;
+  color: var(--font-color);
 }
 
 .navbar-buttons-container {
@@ -35,10 +40,18 @@
 .navbar-button {
   background-color: white !important;
   border: none !important;
-  width: 150px;
-  height: 50px;
-  font-size: 24px !important;
+  border: 1px solid var(--action-color) !important;
+  border-radius: 25px !important;
+  width: 200px;
+  height: 40px;
+  font-size: 18px !important;
   color: var(--font-color) !important;
+  transition: all 0.25s ease-in-out !important;
+}
+
+.navbar-button:hover {
+  background-color: var(--action-color) !important;
+  color: white !important;
 }
 
 .navbar-menu-item {
