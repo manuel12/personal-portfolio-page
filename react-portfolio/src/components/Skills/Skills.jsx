@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Zoom from "@mui/material/Zoom";
 
@@ -7,9 +9,10 @@ import LaptopMacIcon from "@mui/icons-material/LaptopMac";
 import SettingsIcon from "@mui/icons-material/Settings";
 import BugReportIcon from "@mui/icons-material/BugReport";
 
-import SkillCard from "./SkillCard";
+import SkillCard from "../SkillCard/SkillCard";
 import { createObserver, observeElements } from "../../helpers/helpers";
 import "./styles.css";
+import "./darkStyle.css";
 
 const Skills = () => {
   const [skillsHeadingAnimation, setSkillsHeadingAnimation] = useState(false);
@@ -29,8 +32,8 @@ const Skills = () => {
   });
 
   return (
-    <section className="skills" id="skills">
-      <div className="skills-container">
+    <Box className="skills" id="skills">
+      <Container className="skills-container" maxWidth="lg">
         <Zoom in={skillsHeadingAnimation} timeout={1200}>
           <Typography
             id="skillsHeading"
@@ -53,15 +56,27 @@ const Skills = () => {
                 animationFunction={skillIconAnimation}
                 animationTimeout={2200}
               >
-                I've worked with <span className="skill">HTML</span>,{" "}
-                <span className="skill">CSS</span>,{" "}
-                <span className="skill">Bootstrap</span>,{" "}
-                <span className="skill">React</span>,{" "}
-                <span className="skill">Font Awesome</span>,{" "}
-                <span className="skill">ChartJS</span> and other technologies.
-                I've created both personal and certification projects using all
-                these tools. I've also created my own Bootstrap-like library
-                using only CSS.
+                Languages and Technologies I've worked with:
+                <br />
+                <br />
+                Figma
+                <br />
+                Dribble
+                <br />
+                HTML
+                <br />
+                CSS
+                <br />
+                Bootstrap
+                <br />
+                React
+                <br />
+                Font Awesome
+                <br />
+                MaterialUI
+                <br />
+                ChartJS
+                <br />
               </SkillCard>
             </div>
           </Zoom>
@@ -77,10 +92,14 @@ const Skills = () => {
                 animationFunction={skillIconAnimation}
                 animationTimeout={2600}
               >
-                I've done projects in <span className="skill">Python</span>,{" "}
-                <span className="skill">Django</span> and{" "}
-                <span className="skill">DRF</span> and use these to make apps
-                like the Expense Tracker, Motivation Vault and Media Ratings.
+                Languages and Technologies I've worked with:
+                <br />
+                <br />
+                Python
+                <br />
+                Django
+                <br />
+                Django Rest Framework
               </SkillCard>
             </div>
           </Zoom>
@@ -95,20 +114,26 @@ const Skills = () => {
                 animationFunction={skillIconAnimation}
                 animationTimeout={3000}
               >
-                I have years of experience as QA of a variety of applications
-                from web pages, web applications and video games. This includes
-                extensive experience creating test suites for web pages and web
-                applications, automating testing processes and creating
-                functional, UI, API, and Visual tests. For this I currently use
-                <span className="skill">JS</span>,{" "}
-                <span className="skill">Cypress</span> and{" "}
-                <span className="skill">Cypress Image Snapshot</span>.
+                Languages and Technologies I've worked with: <br />
+                <br />
+                JS
+                <br />
+                Cypress
+                <br />
+                Cypress Image Snapshot
+                <br />
+                Python
+                <br />
+                Unittest
+                <br />
+                PyTest
+                <br />
               </SkillCard>
             </div>
           </Zoom>
         </div>
-      </div>
-    </section>
+      </Container>
+    </Box>
   );
 };
 
