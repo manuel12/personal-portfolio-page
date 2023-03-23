@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <>
       <AppBar className="navbar">
-        <Container maxWidth="false">
+        <Container maxWidth="lg">
           <Toolbar className="toolbar" disableGutters>
             <Box
               sx={{
