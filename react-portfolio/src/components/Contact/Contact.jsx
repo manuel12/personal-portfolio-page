@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
-import Slide from "@mui/material/Slide";
 import Zoom from "@mui/material/Zoom";
 
 import EmailIcon from "@mui/icons-material/Email";
@@ -12,6 +11,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 import { createObserver, observeElements } from "../../helpers/helpers";
 import "./styles.css";
+import "./darkStyles.css";
 
 const Contact = () => {
   const [contactHeadingAnimation, setContactHeadingAnimation] = useState(false);
@@ -34,19 +34,18 @@ const Contact = () => {
   });
 
   return (
-    <Box class="contact" id="contact">
-      <Container class="contact-container">
+    <Box className="contact" id="contact">
+      <Container className="contact-container" maxWidth="lg">
+        <Zoom in={contactHeadingAnimation} timeout={1200}>
+          <Typography
+            variant="h3"
+            id="contactHeading"
+            className="contact-heading contact-animation"
+          >
+            Contact
+          </Typography>
+        </Zoom>
         <div className="contact-card">
-          <Zoom in={contactHeadingAnimation} timeout={1200}>
-            <Typography
-              variant="h3"
-              id="contactHeading"
-              className="contact-heading contact-animation"
-            >
-              Contact
-            </Typography>
-          </Zoom>
-
           <div class="icon-section">
             <Zoom in={socialIconsAnimation} timeout={2000}>
               <a
@@ -90,7 +89,7 @@ const Contact = () => {
             <Typography
               variant="body1"
               id="contactQuestion"
-              className="contact-heading contact-animation"
+              className="contact-animation"
             >
               Do you want to work together?
             </Typography>
