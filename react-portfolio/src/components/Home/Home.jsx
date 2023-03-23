@@ -25,8 +25,8 @@ const Home = () => {
 
   return (
     <>
-      <Box class="welcome-section" id="about">
-        <Container class="about-container">
+      <Box className="welcome-section" id="about">
+        <Container className="about-container">
           <Zoom in={headingAnimation} timeout={1200}>
             <Typography
               textAlign="center"
