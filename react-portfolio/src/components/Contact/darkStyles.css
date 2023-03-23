@@ -1,0 +1,53 @@
+.contact {
+  background-color: #0f0f1b !important;
+}
+
+.contact-card {
+  background-color: transparent;
+  border: 1px solid #00ff94;
+  box-shadow: 0px 4px 10px #00ff94;
+}
+
+.contact-heading,
+.contact-container > p {
+  color: white;
+}
+
+.icon-container {
+  background-color: transparent;
+  border: 1px solid #00ff94;
+}
+
+.icon-container:hover {
+  background-color: #00ff94;
+  border: 1px solid #00ff94;
+}
+
+.icon-container > svg {
+  color: #00ff94;
+}
+
+.icon-container > svg:hover {
+  color: #0f0f1b;
+}
+
+input,
+textarea {
+  border: 1px solid #00ff94;
+}
+
+::placeholder {
+  color: white;
+}
+
+.submit-btn {
+  background-color: transparent;
+  border: 1px solid #00ff94;
+  color: white;
+  transition: all 1.25s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: #00ff94;
+  color: black;
+}
