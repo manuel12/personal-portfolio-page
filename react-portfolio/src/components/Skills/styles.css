@@ -1,6 +1,6 @@
 .skills {
-  /* background-color: var(--main-color-light); */
-  min-height: 80vh;
+  background-color: #fafafa;
+  min-height: 90vh !important;
   padding: var(--vertical-padding) 0;
   text-align: center;
 }
@@ -11,6 +11,7 @@
 }
 
 .skills-heading {
+  margin-bottom: 50px !important;
   font-style: italic;
   color: var(--font-color);
 }
