@@ -5,8 +5,10 @@
   --font-color: #333;
   --main-color: #fff;
   --main-color-light: #f0f0f0;
+
   --action-color: #1aff8c;
   --action-color-light: #84ffa9;
+
   --background-color: #00ce3b;
   --darker-background-color: #009916;
   --darkest-background-color: #003000;
@@ -53,6 +55,25 @@ h2 {
 
 h1 {
   font-size: 2.1rem;
+}
+
+h3 {
+  padding: 1px;
+}
+
+.skills-heading,
+.projects-heading,
+.contact-heading {
+  position: relative;
+  top: -45px;
+  background-color: white;
+  border-radius: 50px;
+  border: 1px solid #121b6e2e;
+  font-family: Montserrat, sans-serif !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  color: rgb(84, 84, 84) !important;
+  box-shadow: 0px 0px 2px #002aff79;
 }
 
 li {
