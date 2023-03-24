@@ -11,12 +11,10 @@ export const createObserver = (animationFuncs) => {
 };
 
 export const handleElementVisible = (animationFuncs, elementId, value) => {
-  console.log(elementId, value);
   animationFuncs[elementId](value);
 };
 
 export const observeElements = (elementClass, observer) => {
   const animationElements = document.querySelectorAll(elementClass);
-  console.log(animationElements);
   animationElements.forEach((el) => observer.observe(el));
 };
