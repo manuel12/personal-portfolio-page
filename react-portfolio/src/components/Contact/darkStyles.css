@@ -19,15 +19,15 @@
 }
 
 .icon-container:hover {
-  background-color: #00ff94;
-  border: 1px solid #00ff94;
+  background-color: #00ff94 !important;
+  border: 1px solid #00ff94 !important;
 }
 
 .icon-container > svg {
   color: #00ff94;
 }
 
-.icon-container > svg:hover {
+.icon-container:hover.icon-container > svg {
   color: #0f0f1b;
 }
 
