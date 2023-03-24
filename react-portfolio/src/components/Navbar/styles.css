@@ -40,8 +40,9 @@
 .navbar-button {
   background-color: white !important;
   border: none !important;
-  border-radius: 5px !important;
-  width: fit-content;
+  border-bottom: 1px solid var(--action-color) !important;
+  border-radius: 0 !important;
+  width: calc(100% + 20px) !important;
   height: 40px;
   font-size: 18px !important;
   color: var(--font-color) !important;
