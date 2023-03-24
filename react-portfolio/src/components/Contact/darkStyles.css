@@ -1,11 +1,21 @@
 .contact {
-  background-color: #0f0f1b !important;
+  /* background-color: #0f0f1b !important; */
+  background: rgb(15, 15, 27);
+  background: linear-gradient(
+    90deg,
+    rgba(15, 15, 27, 1) 0%,
+    rgba(81, 81, 89, 1) 60%,
+    rgba(135, 135, 141, 1) 80%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 .contact-card {
   background-color: transparent;
-  border: 1px solid #00ff94;
-  box-shadow: 0px 4px 10px #00ff94;
+  /* border: 1px solid #00ff94; */
+  border: 1px solid #fff;
+  /* box-shadow: 0px 4px 10px #00ff94; */
+  box-shadow: 0px 2px 10px #fff;
 }
 
 .contact-heading,
@@ -24,7 +34,8 @@
 }
 
 .icon-container > svg {
-  color: #00ff94;
+  /* color: #00ff94; */
+  color: #fff;
 }
 
 .icon-container:hover.icon-container > svg {
@@ -33,7 +44,8 @@
 
 input,
 textarea {
-  border: 1px solid #00ff94;
+  /* border: 1px solid #00ff94; */
+  border: 1px solid #fff;
 }
 
 ::placeholder {
