@@ -3,7 +3,8 @@
   min-height: 80vh;
   padding: var(--vertical-padding) 0;
   text-align: center;
-  color: var(--white);
+  /* color: var(--white); */
+  color: var(--font-color)
 }
 
 .contact-container {
