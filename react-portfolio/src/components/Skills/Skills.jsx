@@ -55,29 +55,18 @@ const Skills = () => {
                 headingText="Front-end"
                 animationFunction={skillIconAnimation}
                 animationTimeout={2200}
-              >
-                Languages and Technologies I've worked with:
-                <br />
-                <br />
-                Figma
-                <br />
-                Dribble
-                <br />
-                HTML
-                <br />
-                CSS
-                <br />
-                Bootstrap
-                <br />
-                React
-                <br />
-                Font Awesome
-                <br />
-                MaterialUI
-                <br />
-                ChartJS
-                <br />
-              </SkillCard>
+                skills={[
+                  "Figma",
+                  "Dribble",
+                  "HMTL",
+                  "CSS",
+                  "Bootstrap",
+                  "React",
+                  "Font Awesome",
+                  "MaterialUI",
+                  "ChartJS",
+                ]}
+              />
             </div>
           </Zoom>
 
@@ -91,16 +80,8 @@ const Skills = () => {
                 headingText="Back-end"
                 animationFunction={skillIconAnimation}
                 animationTimeout={2600}
-              >
-                Languages and Technologies I've worked with:
-                <br />
-                <br />
-                Python
-                <br />
-                Django
-                <br />
-                Django Rest Framework
-              </SkillCard>
+                skills={["Python", "Django", "Django Rest Framework"]}
+              />
             </div>
           </Zoom>
           <Zoom in={skillCardAnimation} timeout={1400}>
@@ -113,22 +94,15 @@ const Skills = () => {
                 headingText="Tests"
                 animationFunction={skillIconAnimation}
                 animationTimeout={3000}
-              >
-                Languages and Technologies I've worked with: <br />
-                <br />
-                JS
-                <br />
-                Cypress
-                <br />
-                Cypress Image Snapshot
-                <br />
-                Python
-                <br />
-                Unittest
-                <br />
-                PyTest
-                <br />
-              </SkillCard>
+                skills={[
+                  "JS",
+                  "Cypress",
+                  "Cypress Image Snapshot",
+                  "Python",
+                  "Unittest",
+                  "PyTest",
+                ]}
+              />
             </div>
           </Zoom>
         </div>
