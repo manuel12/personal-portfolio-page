@@ -28,7 +28,7 @@
 .skill-text-section-heading {
   margin-bottom: 50px !important;
   font-style: italic;
-  text-decoration: 3px underline var(--action-color);
+  /* text-decoration: 3px underline var(--action-color); */
   color: var(--font-color);
 }
 
