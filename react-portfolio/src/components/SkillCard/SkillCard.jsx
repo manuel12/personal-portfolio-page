@@ -10,7 +10,7 @@ const SkillCard = ({
   headingText,
   animationFunction,
   animationTimeout,
-  children,
+  skills,
 }) => {
   return (
     <div className="skill-card">
@@ -32,7 +32,17 @@ const SkillCard = ({
           </Typography>
         </Zoom>
         <Typography className="skill-text-section-content">
-          {children}
+          <span>For this I use:</span>
+          <br />
+          <br />
+          {skills.map((skill) => {
+            return (
+              <div>
+                {skill}
+                <br />
+              </div>
+            );
+          })}
         </Typography>
       </div>
     </div>
