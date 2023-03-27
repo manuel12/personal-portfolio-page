@@ -15,3 +15,7 @@
   /* color: white; */
   color: var(--font-color);
 }
+
+.skill-text-section-content > span {
+  color: #1aff8dd6 !important
+}
