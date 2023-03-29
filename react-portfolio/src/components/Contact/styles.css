@@ -1,5 +1,10 @@
 .contact {
-  background-color: #fafafa;
+  background: rgb(15, 15, 27);
+  background: linear-gradient(
+    90deg,
+    rgba(15, 15, 27, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
   min-height: 80vh;
   padding: var(--vertical-padding) 0;
   text-align: center;
@@ -14,10 +19,11 @@
 
 .contact-card {
   background-color: white;
+  border: 1px solid #fff;
   border-radius: 25px;
   margin: 0 auto 50px;
   width: 600px;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 10px #14205f80;
 }
 
 .contact-heading {
@@ -37,8 +43,8 @@
 }
 
 .icon-container {
-  background-color: var(--white);
-  border: 1px solid white;
+  background-color: transparent;
+  border: none;
   border-radius: var(--border-radius);
   margin: 0 20px;
   width: 60px;
@@ -48,19 +54,19 @@
 }
 
 .icon-container:hover {
-  background-color: var(--darker-background-color);
-  border: 1px solid var(--main-color);
+  background-color: #00ff94 !important;
+  border: none;
 }
 
 .icon-container > svg {
   position: relative;
   top: 9px;
   font-size: 40px;
-  color: var(--darker-background-color);
+  color: #00ff94;
   transition: color 0.5s ease-out;
 }
 
-.icon-container > svg:hover {
+.icon-container:hover.icon-container > svg {
   color: white;
 }
 
@@ -72,7 +78,7 @@ input,
 textarea {
   background-color: rgba(0, 0, 0, 0%);
   display: block;
-  border: 1px solid var(--darker-background-color);
+  border: 1px solid silver;
   border-radius: var(--border-radius);
   margin: 20px auto;
   padding: 10px;
@@ -93,28 +99,27 @@ textarea:focus {
 }
 
 ::placeholder {
-  color: var(--font-color);
+  color: silver;
   font-style: italic;
 }
 
 .submit-btn {
-  background-color: var(--main-color);
-  border: 1px solid;
-  border-color: white;
+  background-color: transparent;
+  border: none;
   border-radius: var(--border-radius);
   margin-bottom: 30px;
   padding: 10px 20px;
   font-size: 1.3rem;
-  color: var(--darker-background-color);
+  color: #00ff94;
   text-transform: uppercase;
   cursor: pointer;
-  transition: background-color 0.5s ease-out, border-color 0.5s ease-out,
-    color 0.5s ease-out;
+  transition: all 0.5s ease-in-out !important;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .submit-btn:hover {
-  background-color: var(--darker-background-color);
+  border: none;
+  background-color: #00ff94;
   color: var(--white);
   transition: background-color 0.5s ease-out, border-color 0.5s ease-out,
     color 0.5s ease-out;
