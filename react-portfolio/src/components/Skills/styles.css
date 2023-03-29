@@ -1,5 +1,6 @@
 .skills {
-  background-color: #fafafa;
+  background: rgb(15,15,27);
+  background: linear-gradient(90deg, rgba(15,15,27,1) 0%, rgba(255,255,255,1) 100%);
   min-height: 90vh !important;
   padding: var(--vertical-padding) 0;
   text-align: center;
@@ -13,7 +14,7 @@
 .skills-heading {
   margin-bottom: 50px !important;
   font-style: italic;
-  color: var(--font-color);
+  color: white;
 }
 
 .skill-card-container {
