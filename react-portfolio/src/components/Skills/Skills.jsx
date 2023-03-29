@@ -12,7 +12,7 @@ import BugReportIcon from "@mui/icons-material/BugReport";
 import SkillCard from "../SkillCard/SkillCard";
 import { createObserver, observeElements } from "../../helpers/helpers";
 import "./styles.css";
-import "./darkStyle.css";
+
 
 const Skills = () => {
   const [skillsHeadingAnimation, setSkillsHeadingAnimation] = useState(false);
