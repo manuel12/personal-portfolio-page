@@ -11,7 +11,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 import { createObserver, observeElements } from "../../helpers/helpers";
 import "./styles.css";
-import "./darkStyles.css";
 
 const Contact = () => {
   const [contactHeadingAnimation, setContactHeadingAnimation] = useState(false);
