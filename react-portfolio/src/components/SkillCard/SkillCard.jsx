@@ -3,7 +3,6 @@ import Typography from "@mui/material/Typography";
 import Zoom from "@mui/material/Zoom";
 
 import "./styles.css";
-import "./darkStyles.css";
 
 const SkillCard = ({
   iconElement,
