@@ -36,10 +36,6 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .about-container {
-    width: 80%;
-  }
-
   .about-line-break {
     display: none;
   }
