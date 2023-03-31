@@ -9,7 +9,7 @@
   padding: var(--vertical-padding) 0;
   text-align: center;
   /* color: var(--white); */
-  color: var(--font-color)
+  color: var(--font-color);
 }
 
 .contact-container {
@@ -130,7 +130,4 @@ textarea:focus {
 }
 
 @media only screen and (min-width: 1200px) {
-  .contact-container {
-    /* width: 80% !important; */
-  }
 }
