@@ -5,7 +5,7 @@
     rgba(15, 15, 27, 1) 0%,
     rgba(255, 255, 255, 1) 100%
   );
-  min-height: 80vh;
+  min-height: 100vh;
   padding: var(--vertical-padding) 0;
   text-align: center;
   /* color: var(--white); */
@@ -131,6 +131,6 @@ textarea:focus {
 
 @media only screen and (min-width: 1200px) {
   .contact-container {
-    width: 80%;
+    /* width: 80% !important; */
   }
 }
