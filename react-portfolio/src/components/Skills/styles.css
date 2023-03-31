@@ -1,13 +1,17 @@
 .skills {
-  background: rgb(15,15,27);
-  background: linear-gradient(90deg, rgba(15,15,27,1) 0%, rgba(255,255,255,1) 100%);
-  min-height: 90vh !important;
+  background: rgb(15, 15, 27);
+  background: linear-gradient(
+    90deg,
+    rgba(15, 15, 27, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  min-height: 100vh !important;
   padding: var(--vertical-padding) 0;
   text-align: center;
 }
 
 .skills-container {
-  margin: 0 auto;
+  margin: 0 auto 50px;
   width: 90%;
 }
 
@@ -49,7 +53,4 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .skills-container {
-    width: 80%;
-  }
 }
