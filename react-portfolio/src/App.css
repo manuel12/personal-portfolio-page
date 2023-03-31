@@ -61,9 +61,18 @@ h3 {
   padding: 1px;
 }
 
+li {
+  list-style-type: none;
+}
+
+.App {
+  text-align: center;
+}
+
 .skills-heading,
 .projects-heading,
 .contact-heading {
+  visibility: hidden;
   position: relative;
   top: -45px;
   background-color: white;
@@ -76,10 +85,10 @@ h3 {
   box-shadow: 0px 0px 2px #002aff79;
 }
 
-li {
-  list-style-type: none;
-}
-
-.App {
-  text-align: center;
+.navbar-container,
+.home-container,
+.skills-container,
+.projects-container,
+.contact-container {
+  max-width: 1080px !important;
 }
