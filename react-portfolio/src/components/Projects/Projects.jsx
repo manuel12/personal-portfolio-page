@@ -12,12 +12,9 @@ import { createObserver, observeElements } from "../../helpers/helpers";
 import "./styles.css";
 
 const Projects = () => {
-  const [projectsHeadingAnimation, setProjectsHeadingAnimation] =
-    useState(false);
   const [projectTilesAnimation, setProjectTilesAnimation] = useState(false);
 
   const animationFunctions = {
-    projectsHeading: setProjectsHeadingAnimation,
     projectTiles: setProjectTilesAnimation,
   };
 
@@ -28,17 +25,15 @@ const Projects = () => {
   });
 
   return (
-    <Box class="projects" id="projects">
-      <Container className="projects-container" maxWidth="lg">
-        <Zoom in={projectsHeadingAnimation} timeout={1200}>
-          <Typography
-            variant="h3"
-            id="projectsHeading"
-            className="projects-heading projects-animation"
-          >
-            My Projects
-          </Typography>
-        </Zoom>
+    <Box className="projects" id="projects">
+      <Container className="projects-container">
+        <Typography
+          variant="h3"
+          id="projectsHeading"
+          className="projects-heading"
+        >
+          My Projects
+        </Typography>
 
         <div id="projectTiles" className="projects-grid projects-animation">
           {projects.map((project, i) => {
