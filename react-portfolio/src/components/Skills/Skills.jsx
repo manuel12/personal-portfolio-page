@@ -13,14 +13,11 @@ import SkillCard from "../SkillCard/SkillCard";
 import { createObserver, observeElements } from "../../helpers/helpers";
 import "./styles.css";
 
-
 const Skills = () => {
-  const [skillsHeadingAnimation, setSkillsHeadingAnimation] = useState(false);
   const [skillCardAnimation, setSkillCardAnimation] = useState(false);
   const [skillIconAnimation, setSkillIconAnimation] = useState(false);
 
   const animationFunctions = {
-    skillsHeading: setSkillsHeadingAnimation,
     skillCard: setSkillCardAnimation,
     skillIcon: setSkillIconAnimation,
   };
@@ -33,16 +30,10 @@ const Skills = () => {
 
   return (
     <Box className="skills" id="skills">
-      <Container className="skills-container" maxWidth="lg">
-        <Zoom in={skillsHeadingAnimation} timeout={1200}>
-          <Typography
-            id="skillsHeading"
-            className="skills-heading skills-animation"
-            variant="h3"
-          >
-            Skills
-          </Typography>
-        </Zoom>
+      <Container className="skills-container">
+        <Typography id="skillsHeading" className="skills-heading" variant="h3">
+          Skills
+        </Typography>
 
         <div className="skill-card-container">
           <Zoom in={skillCardAnimation} timeout={600}>
