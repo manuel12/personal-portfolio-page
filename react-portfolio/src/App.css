@@ -12,6 +12,8 @@
   --background-color: #00ce3b;
   --darker-background-color: #009916;
   --darkest-background-color: #003000;
+
+  --main-font: 'Crete Round', serif;
 }
 
 ::-webkit-scrollbar {
