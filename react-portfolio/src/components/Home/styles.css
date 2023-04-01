@@ -18,6 +18,7 @@
 .about-heading {
   position: relative;
   top: 60px;
+  font-family: 'Permanent Marker', cursive !important; 
   font-style: italic;
   color: var(--font-color);
 }
