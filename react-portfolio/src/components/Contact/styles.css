@@ -1,9 +1,9 @@
 .contact {
-  background: rgb(15, 15, 27);
+  background: rgb(26, 255, 140);
   background: linear-gradient(
     90deg,
-    rgba(15, 15, 27, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
+    rgba(26, 255, 140, 1) 0%,
+    rgba(236, 255, 0, 1) 100%
   );
   min-height: 100vh;
   padding: var(--vertical-padding) 0;
@@ -119,7 +119,14 @@ textarea:focus {
 
 .submit-btn:hover {
   border: none;
-  background-color: #00ff94;
+  /* background-color: #00ff94; */
+  background: rgb(26, 255, 140);
+  background: linear-gradient(
+    360deg,
+    rgba(26, 255, 140, 1) 0%,
+    rgba(236, 255, 0, 1) 100%
+  );
+  
   color: var(--white);
   transition: background-color 0.5s ease-out, border-color 0.5s ease-out,
     color 0.5s ease-out;
