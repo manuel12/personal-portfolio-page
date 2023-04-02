@@ -11,7 +11,12 @@
 
 .skill-icon-container {
   display: flex;
-  background-color: var(--action-color);
+  background: rgb(26, 255, 140);
+  background: linear-gradient(
+    360deg,
+    rgba(26, 255, 140, 1) 0%,
+    rgba(236, 255, 0, 1) 100%
+  );
   border-radius: 50px;
   width: 70px;
   height: 70px;
@@ -47,5 +52,5 @@
 }
 
 .skill-text-section-content > span {
-  color: #1aff8dd6 !important
+  color: #1aff8dd6 !important;
 }
