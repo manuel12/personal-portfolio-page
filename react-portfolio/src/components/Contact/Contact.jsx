@@ -42,10 +42,10 @@ const Contact = () => {
         >
           Contact
         </Typography>
-        <Zoom in={contactCardAnimation} timeout={1000}>
+        <Zoom in={contactCardAnimation} timeout={600}>
           <div id="contactCard" className="contact-card contact-animation">
             <div class="icon-section">
-              <Zoom in={socialIconsAnimation} timeout={2000}>
+              <Zoom in={socialIconsAnimation} timeout={700}>
                 <a
                   href="mailto:manuelpinedacabeza.com"
                   target="_blank"
@@ -57,7 +57,7 @@ const Contact = () => {
                   </div>
                 </a>
               </Zoom>
-              <Zoom in={socialIconsAnimation} timeout={2500}>
+              <Zoom in={socialIconsAnimation} timeout={800}>
                 <a
                   href="https://www.linkedin.com/"
                   target="_blank"
@@ -69,7 +69,7 @@ const Contact = () => {
                   </div>
                 </a>
               </Zoom>
-              <Zoom in={socialIconsAnimation} timeout={3000}>
+              <Zoom in={socialIconsAnimation} timeout={900}>
                 <a
                   href="https://github.com/manuel12"
                   target="_blank"
@@ -83,7 +83,7 @@ const Contact = () => {
               </Zoom>
             </div>
 
-            <Zoom in={contactQuestionAnimation} timeout={1500}>
+            <Zoom in={contactQuestionAnimation} timeout={600}>
               <Typography
                 variant="body1"
                 id="contactQuestion"
@@ -98,7 +98,7 @@ const Contact = () => {
               id="contactForm"
               className="contact-animation"
             >
-              <Zoom in={contactFormAnimation} timeout={1800}>
+              <Zoom in={contactFormAnimation} timeout={700}>
                 <input
                   id="name"
                   type="text"
@@ -106,7 +106,7 @@ const Contact = () => {
                   placeholder="Your name..."
                 />
               </Zoom>
-              <Zoom in={contactFormAnimation} timeout={2200}>
+              <Zoom in={contactFormAnimation} timeout={800}>
                 <input
                   id="email"
                   type="email"
@@ -114,14 +114,14 @@ const Contact = () => {
                   placeholder="Your email..."
                 />
               </Zoom>
-              <Zoom in={contactFormAnimation} timeout={2600}>
+              <Zoom in={contactFormAnimation} timeout={900}>
                 <textarea
                   id="message"
                   name="message"
                   placeholder="Your message..."
                 ></textarea>
               </Zoom>
-              <Zoom in={contactFormAnimation} timeout={3000}>
+              <Zoom in={contactFormAnimation} timeout={1000}>
                 <button type="submit" class="submit-btn">
                   Submit
                 </button>
