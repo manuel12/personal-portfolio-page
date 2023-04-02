@@ -46,12 +46,22 @@
   height: 40px;
   font-size: 18px !important;
   color: var(--font-color) !important;
-  transition: all 0.25s ease-in-out !important;
+  transition: all 0.5s ease-in-out !important;
 }
 
 .navbar-button:hover {
-  background-color: #e3ffec86 !important;
-  color: #009916 !important;
+  /* background-color: #e3ffec86 !important;
+  color: #009916 !important; */
+
+  background: rgb(26, 255, 140);
+  background: linear-gradient(
+    360deg,
+    rgba(26, 255, 140, 1) 0%,
+    rgba(236, 255, 0, 1) 100%
+  );
+
+  border-radius: 5px !important;
+  color: white !important;
 }
 
 .navbar-menu-item {
