@@ -37,7 +37,7 @@ const Projects = () => {
 
         <div id="projectTiles" className="projects-grid projects-animation">
           {projects.map((project, i) => {
-            const animTimeout = (i + 1) * 200;
+            const animTimeout = (i + 1) * 100;
             console.log(animTimeout);
             return (
               <Zoom key={i} in={projectTilesAnimation} timeout={animTimeout}>

@@ -36,7 +36,7 @@ const Skills = () => {
         </Typography>
 
         <div className="skill-card-container">
-          <Zoom in={skillCardAnimation} timeout={600}>
+          <Zoom in={skillCardAnimation} timeout={400}>
             <div
               id="skillCard"
               className="skill-card-animation-wrapper skills-animation"
@@ -45,7 +45,7 @@ const Skills = () => {
                 iconElement={<LaptopMacIcon />}
                 headingText="Front-end"
                 animationFunction={skillIconAnimation}
-                animationTimeout={2200}
+                animationTimeout={500}
                 skills={[
                   "Figma",
                   "Dribble",
@@ -61,7 +61,7 @@ const Skills = () => {
             </div>
           </Zoom>
 
-          <Zoom in={skillCardAnimation} timeout={1000}>
+          <Zoom in={skillCardAnimation} timeout={600}>
             <div
               id="skillCard"
               className="skill-card-animation-wrapper skills-animation"
@@ -70,12 +70,12 @@ const Skills = () => {
                 iconElement={<SettingsIcon />}
                 headingText="Back-end"
                 animationFunction={skillIconAnimation}
-                animationTimeout={2600}
+                animationTimeout={700}
                 skills={["Python", "Django", "Django Rest Framework"]}
               />
             </div>
           </Zoom>
-          <Zoom in={skillCardAnimation} timeout={1400}>
+          <Zoom in={skillCardAnimation} timeout={800}>
             <div
               id="skillCard"
               className="skill-card-animation-wrapper skills-animation"
@@ -84,7 +84,7 @@ const Skills = () => {
                 iconElement={<BugReportIcon />}
                 headingText="Tests"
                 animationFunction={skillIconAnimation}
-                animationTimeout={3000}
+                animationTimeout={900}
                 skills={[
                   "JS",
                   "Cypress",

@@ -27,7 +27,7 @@ const Home = () => {
     <>
       <Box className="welcome-section" id="about">
         <Container className="about-container">
-          <Zoom in={headingAnimation} timeout={1200}>
+          <Zoom in={headingAnimation} timeout={600}>
             <Typography
               textAlign="center"
               variant="h3"
@@ -40,7 +40,7 @@ const Home = () => {
               Back-end & Test Developer
             </Typography>
           </Zoom>
-          <Zoom in={textAnimation} timeout={1600}>
+          <Zoom in={textAnimation} timeout={1000}>
             <Typography
               variant="h6"
               id="text"
