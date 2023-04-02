@@ -1,5 +1,6 @@
 .welcome-section {
   background-color: white;
+
   margin: 50px auto 10px;
   width: 100%;
   min-height: 100vh;
@@ -18,10 +19,14 @@
 .about-heading {
   position: relative;
   top: 60px;
-  /* font-family: 'Permanent Marker', cursive !important;  */
   font-family: var(--main-font) !important;
   font-style: italic;
-  color: var(--font-color);
+  /* color: var(--font-color); */
+  color: white !important;
+
+  background: -webkit-linear-gradient(rgba(26, 255, 140, 1), rgba(236, 255, 0, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .about-text {
