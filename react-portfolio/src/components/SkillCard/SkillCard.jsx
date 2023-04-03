@@ -31,9 +31,6 @@ const SkillCard = ({
           </Typography>
         </Zoom>
         <Typography className="skill-text-section-content">
-          <span>For this I use:</span>
-          <br />
-          <br />
           {skills.map((skill) => {
             return (
               <div>
