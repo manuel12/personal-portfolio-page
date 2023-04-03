@@ -1,6 +1,5 @@
 .welcome-section {
   background-color: white;
-
   margin: 50px auto 10px;
   width: 100%;
   min-height: 100vh;
@@ -21,12 +20,17 @@
   top: 60px;
   font-family: var(--main-font) !important;
   font-style: italic;
-  /* color: var(--font-color); */
-  color: white !important;
+}
 
-  background: -webkit-linear-gradient(rgba(26, 255, 140, 1), rgba(236, 255, 0, 1));
+.about-text-name {
+  background: #00cf98;
+  background: linear-gradient(to right, #00cf98 0%, #ccff11 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.about-text-profession {
+  color: var(--main-font);
 }
 
 .about-text {
