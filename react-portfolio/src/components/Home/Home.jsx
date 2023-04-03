@@ -30,14 +30,25 @@ const Home = () => {
           <Zoom in={headingAnimation} timeout={600}>
             <Typography
               textAlign="center"
-              variant="h3"
+              variant="h2"
               id="heading"
               className="about-heading about-animation"
             >
-              Manuel Pineda
-              <br />
-              Front-end, <br class="about-line-break" />
-              Back-end & Test Developer
+              <span className="about-text-name">Manuel Pineda</span>
+            </Typography>
+          </Zoom>
+
+          <Zoom in={headingAnimation} timeout={600}>
+            <Typography
+              textAlign="center"
+              variant="h4"
+              id="heading"
+              className="about-heading about-animation"
+            >
+              <span className="about-text-profession">
+                Front-end, <br class="about-line-break" />
+                Back-end & Test Developer
+              </span>
             </Typography>
           </Zoom>
           <Zoom in={textAnimation} timeout={1000}>
