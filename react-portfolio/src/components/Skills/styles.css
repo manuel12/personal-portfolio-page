@@ -5,13 +5,13 @@
     rgba(26, 255, 140, 1) 0%,
     rgba(236, 255, 0, 1) 100%
   );
-  min-height: 100vh !important;
+  min-height: var(--skills-contact-height);
   padding: var(--vertical-padding) 0;
   text-align: center;
 }
 
 .skills-container {
-  margin: 0 auto 50px;
+  margin: 0 auto;
   width: 90%;
 }
 
