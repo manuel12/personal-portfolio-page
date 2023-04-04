@@ -1,6 +1,7 @@
 :root {
   --border-radius: 30px;
   --vertical-padding: 15px;
+  
   --white: #fff;
   --font-color: #333;
   --main-color: #fff;
@@ -9,11 +10,8 @@
   --action-color: #1aff8c;
   --action-color-light: #84ffa9;
 
-  --background-color: #00ce3b;
-  --darker-background-color: #009916;
-  --darkest-background-color: #003000;
-
   --main-font: 'Permanent Marker', cursive !important; 
+  --skills-contact-height: fit-content;
 }
 
 ::-webkit-scrollbar {
@@ -75,6 +73,7 @@ li {
 .projects-heading,
 .contact-heading {
   visibility: hidden;
+  display: none;
   position: relative;
   top: -45px;
   background-color: white;
