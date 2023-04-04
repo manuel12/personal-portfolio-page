@@ -5,10 +5,9 @@
     rgba(26, 255, 140, 1) 0%,
     rgba(236, 255, 0, 1) 100%
   );
-  min-height: 100vh;
+  min-height: var(--skills-contact-height);
   padding: var(--vertical-padding) 0;
   text-align: center;
-  /* color: var(--white); */
   color: var(--font-color);
 }
 
@@ -21,7 +20,7 @@
   background-color: white;
   border: 1px solid #fff;
   border-radius: 25px;
-  margin: 0 auto 50px;
+  margin: 0 auto;
   width: 600px;
   box-shadow: 0px 0px 10px #14205f80;
 }
