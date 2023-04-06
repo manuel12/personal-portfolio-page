@@ -3,16 +3,14 @@
   margin: 50px auto 10px;
   width: 100%;
   min-height: 100vh;
-  height: fit-content;
-  padding: var(--vertical-padding) 0;
+  padding: 150px 0;
   text-align: center;
 }
 
 .about-container {
-  position: relative;
-  top: 100px;
-  margin: 50px auto 120px;
+  height: 840px;
   width: 90%;
+  margin: 0 auto;
 }
 
 .about-heading {
@@ -27,16 +25,19 @@
   background: linear-gradient(to right, #00cf98 0%, #ccff11 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 20px !important;
 }
 
 .about-text-profession {
   color: var(--main-font);
+  margin-bottom: 50px !important;
 }
 
-.about-text {
+.about-text-about-me {
   position: relative;
   top: 120px;
   color: var(--font-color);
+  font-family: Montserrat, sans-serif !important;
 }
 
 @media only screen and (min-width: 768px) {
