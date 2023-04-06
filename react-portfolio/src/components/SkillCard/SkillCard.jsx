@@ -14,14 +14,14 @@ const SkillCard = ({
   return (
     <div className="skill-card">
       <div className="skill-icon-section">
-        <Zoom in={animationFunction} timeout={animationTimeout}>
+        <Zoom in={true} timeout={animationTimeout}>
           <div id="skillIcon" className="skill-icon-container skills-animation">
             {iconElement}
           </div>
         </Zoom>
       </div>
       <div className="skill-text-section">
-        <Zoom in={animationFunction} timeout={animationTimeout}>
+        <Zoom in={true} timeout={animationTimeout}>
           <Typography
             id="skillIcon"
             className="skill-text-section-heading skills-animation"
@@ -31,14 +31,11 @@ const SkillCard = ({
           </Typography>
         </Zoom>
         <Typography className="skill-text-section-content">
-          {skills.map((skill) => {
-            return (
-              <div>
-                {skill}
-                <br />
-              </div>
-            );
-          })}
+          <ul className="skill-list">
+            {skills.map((skill) => {
+              return <li className="single-skill">{skill}</li>;
+            })}
+          </ul>
         </Typography>
       </div>
     </div>
