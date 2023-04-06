@@ -52,17 +52,15 @@ const Home = () => {
           <Zoom in={textAnimation} timeout={1000}>
             <Typography
               variant="h6"
+              textAlign="center"
               id="text"
               className="about-text-about-me about-animation"
             >
-              Hi! I'm Manuel. How are you doing? I love all sides of programing
-              web apps, from the backend, to frontend and testing.
-              <br />
-              I've done each. I believe in being able to build all parts of an
-              application in order to fully understand how it works.
-              <br />
-              <br />
-              In my free time I enjoy reading, running and photography.
+              Hi! I'm Manuel. I love all sides of programing web apps, from the
+              backend, to frontend and testing. I've done each and I believe in
+              being able to build all parts of an application in order to fully
+              understand how it works. In my free time I enjoy reading, running
+              and photography.
             </Typography>
           </Zoom>
         </Container>
