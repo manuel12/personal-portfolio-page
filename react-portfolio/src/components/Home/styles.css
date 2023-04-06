@@ -36,6 +36,9 @@
 .about-text-about-me {
   position: relative;
   top: 120px;
+  margin: 0 auto !important;
+  max-width: 700px;
+  line-height: 2.2 !important;
   color: var(--font-color);
   font-family: Montserrat, sans-serif !important;
 }
