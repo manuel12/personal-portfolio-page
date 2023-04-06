@@ -1,0 +1,28 @@
+.project-title {
+  font-family: var(--main-font) !important;
+  font-style: italic;
+}
+
+.single-project-container {
+  display: flex;
+  height: 200px;
+  padding: 200px 0;
+}
+
+.left-side {
+  width: 60%;
+}
+
+.project-image {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.right-side {
+  width: 40%;
+  padding-left: 100px;
+}
+
+.project-description {
+  line-height: 2 !important;
+}
