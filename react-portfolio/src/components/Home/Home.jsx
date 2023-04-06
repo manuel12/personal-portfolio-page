@@ -32,9 +32,9 @@ const Home = () => {
               textAlign="center"
               variant="h2"
               id="heading"
-              className="about-heading about-animation"
+              className="about-heading about-text-name about-animation"
             >
-              <span className="about-text-name">Manuel Pineda</span>
+              Manuel Pineda
             </Typography>
           </Zoom>
 
@@ -43,19 +43,17 @@ const Home = () => {
               textAlign="center"
               variant="h4"
               id="heading"
-              className="about-heading about-animation"
+              className="about-heading about-text-profession about-animation"
             >
-              <span className="about-text-profession">
-                Front-end, <br class="about-line-break" />
-                Back-end & Test Developer
-              </span>
+              Front-end, <br class="about-line-break" />
+              Back-end & Test Developer
             </Typography>
           </Zoom>
           <Zoom in={textAnimation} timeout={1000}>
             <Typography
               variant="h6"
               id="text"
-              className="about-text about-animation"
+              className="about-text-about-me about-animation"
             >
               Hi! I'm Manuel. How are you doing? I love all sides of programing
               web apps, from the backend, to frontend and testing.
