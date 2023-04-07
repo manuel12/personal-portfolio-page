@@ -51,7 +51,7 @@
 
 .skill-text-section-content {
   font-family: Montserrat, sans-serif !important;
-  font-weight: 600 !important;
+  font-style: italic;
   color: var(--font-color);
 }
 
@@ -65,5 +65,5 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  justify-content: space-around !important;
+  justify-content: space-evenly !important;
 }
