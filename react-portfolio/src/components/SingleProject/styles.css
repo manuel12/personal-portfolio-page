@@ -9,11 +9,7 @@
 }
 
 .content {
-  display: flex;
-}
 
-.left-side {
-  width: 70%;
 }
 
 .image-container {
@@ -22,13 +18,10 @@
 .project-image {
   border-radius: 10px;
   width: 100%;
-}
-
-.right-side {
-  width: 30%;
-  padding-left: 100px;
+  margin-bottom: 100px !important;
 }
 
 .project-description {
   line-height: 2 !important;
+  margin-bottom: 20px !important;
 }
