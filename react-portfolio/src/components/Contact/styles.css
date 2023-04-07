@@ -116,7 +116,8 @@ textarea:focus {
   border-radius: var(--border-radius);
   margin-bottom: 30px;
   padding: 10px 20px;
-  font-family: var(--main-font) !important;
+  font-family: Montserrat, sans-serif !important;
+  font-weight: bold !important;
   font-size: 1.3rem;
 
   color: #48ff05 !important;
