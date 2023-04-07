@@ -31,7 +31,7 @@ const Projects = () => {
           variant="h3"
           id="projectsHeading"
           className="projects-heading"
-      >
+        >
           My Projects
         </Typography>
 
@@ -52,25 +52,6 @@ const Projects = () => {
           projectImageUrl="https://user-images.githubusercontent.com/4129325/221217865-d51a9f01-a1d1-438b-86b0-d85acd3d4351.png"
           projectDescription="A Media Ratings application where you can search for the IMDb & Rotten Tomatoes ratings for your favorite series."
         />
-
-        {/* <div id="projectTiles" className="projects-grid projects-animation">
-          {projects.map((project, i) => {
-            const animTimeout = (i + 1) * 100;
-            console.log(animTimeout);
-            return (
-              <Zoom key={i} in={projectTilesAnimation} timeout={animTimeout}>
-                <Box key={i}>
-                  <ProjectTile
-                    key={i}
-                    projectUrl={project.projectUrl}
-                    projectName={project.projectName}
-                    projectImgSrc={project.projectImgSrc}
-                  />
-                </Box>
-              </Zoom>
-            );
-          })}
-        </div> */}
       </Container>
     </Box>
   );
