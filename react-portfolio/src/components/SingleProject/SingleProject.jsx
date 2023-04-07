@@ -10,11 +10,11 @@ const SingleProject = ({
   projectDescription,
 }) => {
   return (
-    <div>
+    <div className="single-project-container">
       <Typography className="project-title" variant="h3">
         {projectTitle}
       </Typography>
-      <div className="single-project-container">
+      <div className="content">
         <div className="left-side">
           <div className="image-container">
             <img className="project-image" src={projectImageUrl} alt="" />
