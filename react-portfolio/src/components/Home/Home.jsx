@@ -30,7 +30,7 @@ const Home = () => {
           <Zoom in={headingAnimation} timeout={600}>
             <Typography
               textAlign="center"
-              variant="h2"
+              variant="h1"
               id="heading"
               className="about-heading about-text-name about-animation"
             >
@@ -51,7 +51,6 @@ const Home = () => {
           </Zoom>
           <Zoom in={textAnimation} timeout={1000}>
             <Typography
-              variant="h6"
               textAlign="center"
               id="text"
               className="about-text-about-me about-animation"
