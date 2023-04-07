@@ -41,17 +41,14 @@
   background-color: white !important;
   border: none !important;
   border-radius: 25px !important;
-
   position: relative;
   right: 0;
-
   width: calc(100%) !important;
   height: 40px;
   font-size: 20px !important;
   font-weight: bold !important;
   font-family: var(--main-font) !important;
   color: var(--font-color) !important;
-
   transition: all 0.25s ease-in-out !important;
 }
 
@@ -59,10 +56,8 @@
   background: #00cf98;
   background: linear-gradient(to right, #00cf98 0%, #ccff11 100%);
   border-radius: 25px !important;
-
   position: relative;
   right: 25px;
-
   width: calc(100% + 50px) !important;
   color: white !important;
 }
