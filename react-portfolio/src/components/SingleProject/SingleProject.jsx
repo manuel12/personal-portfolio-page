@@ -11,20 +11,23 @@ const SingleProject = ({
 }) => {
   return (
     <div className="single-project-container">
-      <Typography className="project-title" variant="h3">
+      <Typography className="project-title" variant="h3" textAlign="left">
         {projectTitle}
       </Typography>
       <div className="content">
-        <div className="left-side">
-          <div className="image-container">
-            <img className="project-image" src={projectImageUrl} alt="" />
-          </div>
-        </div>
-        <div className="right-side">
-          <Typography className="project-description" textAlign="left">
-            {projectDescription}
-          </Typography>
-        </div>
+        <img className="project-image" src={projectImageUrl} alt="" />
+
+        <Typography className="project-description" textAlign="left">
+          {projectDescription}
+        </Typography>
+
+        <Typography textAlign="left">
+          Front-end: HMTL, CSS, JS, Bootstrap.
+        </Typography>
+        <Typography textAlign="left">Back-end: Python, Django.</Typography>
+        <Typography textAlign="left">
+          Automated Tests: JS, Cypress, Cypress Image Snapshot.
+        </Typography>
       </div>
     </div>
   );
