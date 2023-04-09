@@ -36,7 +36,7 @@ const Skills = () => {
         </Typography>
 
         <div className="skill-card-container">
-          <Zoom in={true} timeout={400}>
+          <Zoom in={skillCardAnimation} timeout={400}>
             <div
               id="skillCard"
               className="skill-card-animation-wrapper skills-animation"
@@ -61,7 +61,7 @@ const Skills = () => {
             </div>
           </Zoom>
 
-          <Zoom in={true} timeout={600}>
+          <Zoom in={skillCardAnimation} timeout={600}>
             <div
               id="skillCard"
               className="skill-card-animation-wrapper skills-animation"
@@ -76,7 +76,7 @@ const Skills = () => {
             </div>
           </Zoom>
 
-          <Zoom in={true} timeout={800}>
+          <Zoom in={skillCardAnimation} timeout={800}>
             <div
               id="skillCard"
               className="skill-card-animation-wrapper skills-animation"
