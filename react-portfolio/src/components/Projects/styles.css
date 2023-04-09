@@ -1,12 +1,12 @@
 .projects {
   background-color: var(--white);
   min-height: 150vh;
-  padding: var(--vertical-padding) 0;
+  padding: var(--spacing-lg) 0;
   text-align: center;
 }
 
 .projects-heading {
-  margin-bottom: 50px !important;
+  margin-bottom: var(--spacing-lg) !important;
   font-style: italic;
   color: var(--font-color);
 }
