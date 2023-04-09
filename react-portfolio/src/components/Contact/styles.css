@@ -6,7 +6,7 @@
     rgba(236, 255, 0, 1) 100%
   );
   min-height: var(--skills-contact-height);
-  padding: var(--vertical-padding) 0;
+  padding: var(--spacing-lg) 0;
   text-align: center;
   color: var(--font-color);
 }
@@ -17,7 +17,7 @@
 }
 
 .contact-card {
-  background-color: white;
+  background-color: var(--white);
   border: 1px solid #fff;
   border-radius: 25px;
   margin: 0 auto;
@@ -27,13 +27,13 @@
 }
 
 .contact-heading {
-  margin-bottom: 50px !important;
+  margin-bottom: var(--spacing-lg) !important;
   font-style: italic;
   color: var(--font-color);
 }
 
 .contact-container p {
-  font-family: Montserrat, sans-serif !important;
+  font-family: var(--secondary-font) !important;;
 }
 
 .icon-section {
@@ -69,12 +69,12 @@
   position: relative;
   top: 10px;
   font-size: 40px;
-  color: #48ff05;
+  color: var(--social-icon-color);
   transition: all 0.1s !important;
 }
 
 .icon-container:hover.icon-container > svg {
-  color: white;
+  color: var(--white);
 }
 
 form {
@@ -87,8 +87,8 @@ textarea {
   display: block;
   border: 1px solid silver;
   border-radius: var(--border-radius);
-  margin: 20px auto;
-  padding: 10px;
+  margin: var(--spacing-sm) auto;
+  padding: var(--spacing-xs);
   width: 80%;
   max-width: 500px;
   font-family: europa, sans-serif;
@@ -114,13 +114,11 @@ textarea:focus {
   background-color: transparent;
   border: none;
   border-radius: var(--border-radius);
-  margin-bottom: 30px;
-  padding: 10px 20px;
-  font-family: Montserrat, sans-serif !important;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-family: var(--secondary-font) !important;
   font-weight: bold !important;
-  font-size: 1.3rem;
-
-  color: #48ff05 !important;
+  font-size: 20px;
+  color: var(--social-icon-color) !important;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.25s ease-in-out !important;
@@ -135,7 +133,7 @@ textarea:focus {
     rgba(26, 255, 140, 1) 0%,
     rgba(236, 255, 0, 1) 100%
   );
-  padding: 10px 40px;
+  padding: var(--spacing-xs) var(--spacing-md);
   color: var(--font-color) !important;
 }
 
