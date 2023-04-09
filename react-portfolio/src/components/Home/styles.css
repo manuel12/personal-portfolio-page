@@ -1,9 +1,9 @@
 .welcome-section {
-  background-color: white;
-  margin: 50px auto 10px;
+  background-color: var(--white);
+  margin: var(--spacing-lg) auto var(--spacing-sm);
   width: 100%;
   min-height: 100vh;
-  padding: 150px 0;
+  padding: var(--spacing-lg) 0;
   text-align: center;
 }
 
@@ -25,12 +25,12 @@
   background: linear-gradient(to right, #00cf98 0%, #ccff11 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 20px !important;
+  margin-bottom: var(--spacing-md) !important;
 }
 
 .about-text-profession {
   color: var(--main-font);
-  margin-bottom: 50px !important;
+  margin-bottom: var(--spacing-lg) !important;
 }
 
 .about-text-about-me {
@@ -40,7 +40,7 @@
   max-width: 450px;
   line-height: 2.2 !important;
   color: var(--font-color);
-  font-family: Montserrat, sans-serif !important;
+  font-family: var(--secondary-font) !important;
 }
 
 @media only screen and (min-width: 768px) {
