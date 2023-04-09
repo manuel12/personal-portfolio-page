@@ -14,14 +14,14 @@ const SkillCard = ({
   return (
     <div className="skill-card">
       <div className="skill-icon-section">
-        <Zoom in={true} timeout={animationTimeout}>
+        <Zoom in={animationFunction} timeout={animationTimeout}>
           <div id="skillIcon" className="skill-icon-container skills-animation">
             {iconElement}
           </div>
         </Zoom>
       </div>
       <div className="skill-text-section">
-        <Zoom in={true} timeout={animationTimeout}>
+        <Zoom in={animationFunction} timeout={animationTimeout}>
           <Typography
             id="skillIcon"
             className="skill-text-section-heading skills-animation"
