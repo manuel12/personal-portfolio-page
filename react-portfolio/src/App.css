@@ -1,16 +1,25 @@
 :root {
   --border-radius: 30px;
-  --vertical-padding: 60px;
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 32px;
+  --spacing-lg: 64px;
+  --spacing-xl: 128px;
 
   --white: #fff;
   --font-color: #333;
+
   --main-color: #fff;
   --main-color-light: #f0f0f0;
 
   --action-color: #1aff8c;
   --action-color-light: #84ffa9;
 
-  --main-font: "Permanent Marker", cursive !important;
+  --social-icon-color: #48ff05;
+
+  --main-font: "Permanent Marker", cursive;
+  --secondary-font: "Montserrat", sans-serif;
+
   --skills-contact-height: fit-content;
 }
 
@@ -42,7 +51,7 @@ body {
 
 body,
 p {
-  font-family: Montserrat, sans-serif !important;
+  font-family: var(--secondary-font) !important;
   font-weight: 100;
   word-spacing: 3px;
   line-height: 1.5;
@@ -54,15 +63,12 @@ div {
 
 h1,
 h2 {
-  color: var(--dark-blue);
 }
 
 h1 {
-  font-size: 2.1rem;
 }
 
 h3 {
-  padding: 1px;
 }
 
 li {
@@ -80,10 +86,9 @@ li {
   display: none;
   position: relative;
   top: -45px;
-  background-color: white;
+  background-color: var(--white);
   border-radius: 50px;
   border: 1px solid #121b6e2e;
-  font-family: Montserrat, sans-serif !important;
   font-style: normal !important;
   font-weight: 600 !important;
   color: rgb(84, 84, 84) !important;
