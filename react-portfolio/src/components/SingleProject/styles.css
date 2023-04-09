@@ -1,9 +1,9 @@
 .single-project-container {
-  padding: 200px 0;
+  padding: var(--spacing-lg) 0;
 }
 
 .project-title {
-  margin-bottom: 100px !important;
+  margin-bottom: var(--spacing-lg) !important;
   font-family: var(--main-font) !important;
   font-style: italic;
 }
@@ -18,10 +18,10 @@
 .project-image {
   border-radius: 10px;
   width: 100%;
-  margin-bottom: 100px !important;
+  margin-bottom: var(--spacing-lg) !important;
 }
 
 .project-description {
   line-height: 2 !important;
-  margin-bottom: 20px !important;
+  margin-bottom: var(--spacing-md) !important;
 }
