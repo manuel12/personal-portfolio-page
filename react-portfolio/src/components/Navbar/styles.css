@@ -13,7 +13,6 @@
   top: 0;
   background-color: var(--main-color) !important;
   width: 100%;
-  padding: 5px 0;
   z-index: 10;
 }
 
@@ -45,9 +44,9 @@
   right: 0;
   width: calc(100%) !important;
   height: 40px;
-  font-size: 20px !important;
+  font-size: 16px;
   font-weight: bold !important;
-  font-family: Montserrat, sans-serif !important;
+  font-family: var(--secondary-font) !important;
   color: var(--font-color) !important;
   transition: all 0.25s ease-in-out !important;
 }
