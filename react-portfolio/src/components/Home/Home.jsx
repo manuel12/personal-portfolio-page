@@ -45,7 +45,7 @@ const Home = () => {
               id="heading"
               className="about-heading about-text-profession about-animation"
             >
-              Front-end, <br class="about-line-break" />
+              Front-end, <br className="about-line-break" />
               Back-end & Test Developer
             </Typography>
           </Zoom>
