@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
-import Zoom from "@mui/material/Zoom";
 
 import SingleProject from "../SingleProject/SingleProject";
 import projects from "../../data/projects";
@@ -12,31 +11,56 @@ import { createObserver, observeElements } from "../../helpers/helpers";
 import "./styles.css";
 
 const Projects = () => {
-  const animationFunctions = {};
+  const [projectAnimation1, setProjectAnimation1] = useState(false);
+  const [projectAnimation2, setProjectAnimation2] = useState(false);
+  const [projectAnimation3, setProjectAnimation3] = useState(false);
+  const [projectAnimation4, setProjectAnimation4] = useState(false);
+  // const [porjectAnimation5, setProjectAnimation5] = useState(false);
+  // const [porjectAnimation6, setProjectAnimation6] = useState(false);
+
+  const projectAnimations = {
+    projectAnimation1,
+    projectAnimation2,
+    projectAnimation3,
+    projectAnimation4,
+  };
+
+  const animationFunctions = {
+    project1: setProjectAnimation1,
+    project2: setProjectAnimation2,
+    project3: setProjectAnimation3,
+    project4: setProjectAnimation4,
+    // project5: setProjectAnimation5,
+    // project6: setProjectAnimation6,
+  };
 
   const observer = createObserver(animationFunctions);
 
   useEffect(() => {
     observeElements(".projects-animation", observer);
-  });
+  }, [projectAnimation1]);
 
   return (
-    <Box className="projects" id="projects">
-      <Container className="projects-container">
+    <Box className='projects' id='projects'>
+      <Container className='projects-container'>
         <Typography
-          variant="h3"
-          id="projectsHeading"
-          className="projects-heading"
+          variant='h3'
+          id='projectsHeading'
+          className='projects-heading'
         >
           My Projects
         </Typography>
 
-        {projects.map((project) => {
+        {projects.map((project, i) => {
           return (
             <SingleProject
+              key={project}
+              projectId={`project${i + 1}`}
+              projectAnimationClass={"projects-animation"}
+              projectAnimation={projectAnimations[`projectAnimation${i + 1}`]}
               projectName={project.projectName}
               projectImageUrl={project.projectImgSrc}
-              projectDescription={project.projectName}
+              projectDescription={project.projectDesc}
               frontendSkills={project.frontendSkills}
               backendSkills={project.backendSkills}
               automatedTestSkills={project.automatedTestSkills}
