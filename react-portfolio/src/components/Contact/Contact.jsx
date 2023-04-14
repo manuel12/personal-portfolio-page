@@ -44,7 +44,7 @@ const Contact = () => {
         </Typography>
         <Zoom in={contactCardAnimation} timeout={600}>
           <div id="contactCard" className="contact-card contact-animation">
-            <div class="icon-section">
+            <div className="icon-section">
               <Zoom in={socialIconsAnimation} timeout={700}>
                 <a
                   href="mailto:manuelpinedacabeza.com"
@@ -52,7 +52,7 @@ const Contact = () => {
                   id="socialIcon"
                   className="contact-animation"
                 >
-                  <div class="icon-container">
+                  <div className="icon-container">
                     <EmailIcon />
                   </div>
                 </a>
@@ -64,7 +64,7 @@ const Contact = () => {
                   id="socialIcon"
                   className="contact-animation"
                 >
-                  <div class="icon-container">
+                  <div className="icon-container">
                     <LinkedInIcon />
                   </div>
                 </a>
@@ -76,7 +76,7 @@ const Contact = () => {
                   id="socialIcon"
                   className="contact-animation"
                 >
-                  <div class="icon-container">
+                  <div className="icon-container">
                     <GitHubIcon />
                   </div>
                 </a>
@@ -122,7 +122,7 @@ const Contact = () => {
                 ></textarea>
               </Zoom>
               <Zoom in={contactFormAnimation} timeout={1000}>
-                <button type="submit" class="submit-btn">
+                <button type="submit" className="submit-btn">
                   Submit
                 </button>
               </Zoom>
