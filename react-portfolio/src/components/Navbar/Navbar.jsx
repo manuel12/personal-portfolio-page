@@ -59,7 +59,7 @@ const Navbar = () => {
                 }}
               >
                 {pages.map((page) => (
-                  <a href={`#${page}`}>
+                  <a href={`#${page}`} key={page}>
                     <MenuItem
                       key={page}
                       onClick={handleCloseNavMenu}
