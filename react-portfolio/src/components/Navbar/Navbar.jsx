@@ -29,9 +29,9 @@ const Navbar = () => {
 
   return (
     <>
-      <AppBar className="navbar">
-        <Container className="navbar-container">
-          <Toolbar className="toolbar" disableGutters>
+      <AppBar className='navbar'>
+        <Container className='navbar-container'>
+          <Toolbar className='toolbar' disableGutters>
             <Box
               sx={{
                 display: {
@@ -40,12 +40,12 @@ const Navbar = () => {
                 },
               }}
             >
-              <IconButton size="small" onClick={handleOpenNavMenu}>
-                <MenuIcon sx={{ fontSize: 36 }} className="hamburger-button" />
+              <IconButton size='small' onClick={handleOpenNavMenu}>
+                <MenuIcon sx={{ fontSize: 36 }} className='hamburger-button' />
               </IconButton>
 
               <Menu
-                className="hamburger-menu"
+                className='hamburger-menu'
                 anchorEl={anchorElNav}
                 anchorOrigin={{
                   vertical: "bottom",
@@ -63,10 +63,10 @@ const Navbar = () => {
                     <MenuItem
                       key={page}
                       onClick={handleCloseNavMenu}
-                      className="navbar-menu-item"
+                      className='navbar-menu-item'
                       dense
                     >
-                      <Typography textalign="left" variant="h5">
+                      <Typography textalign='left' variant='h5'>
                         {page}
                       </Typography>
                     </MenuItem>
@@ -75,7 +75,7 @@ const Navbar = () => {
               </Menu>
             </Box>
             <Box
-              className="navbar-buttons-container"
+              className='navbar-buttons-container'
               sx={{
                 display: {
                   xs: "none",
@@ -85,8 +85,8 @@ const Navbar = () => {
             >
               {pages.map((page) => {
                 return (
-                  <a href={`#${page}`} key={page} className="navbar-link">
-                    <Button className="navbar-button" variant="outlined">
+                  <a href={`#${page}`} key={page} className='navbar-link'>
+                    <Button className='navbar-button' variant='outlined'>
                       {page}
                     </Button>
                   </a>
