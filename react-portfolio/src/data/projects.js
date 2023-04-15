@@ -36,8 +36,9 @@ export default [
     projectName: "MUI Landing Page",
     projectUrl: "https://github.com/manuel12/mui-landing-page",
     projectImgSrc:
-      "https://user-images.githubusercontent.com/4129325/221217865-d51a9f01-a1d1-438b-86b0-d85acd3d4351.png",
-    projectDesc: "",
+      "https://user-images.githubusercontent.com/4129325/230984164-8bcdccba-f995-4d89-b308-a6a0f59b32ea.png",
+    projectDesc:
+      "A landing page for an italian pizzeria made with Material UI.",
     frontendSkills: ["HMTL", "CSS", "JS", "React", "Material UI"],
   },
 
