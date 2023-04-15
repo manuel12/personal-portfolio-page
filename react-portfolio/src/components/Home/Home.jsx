@@ -25,14 +25,14 @@ const Home = () => {
 
   return (
     <>
-      <Box className="welcome-section" id="about">
-        <Container className="about-container">
+      <Box className='welcome-section' id='about'>
+        <Container className='about-container'>
           <Zoom in={headingAnimation} timeout={600}>
             <Typography
-              textAlign="center"
-              variant="h1"
-              id="heading"
-              className="about-heading about-text-name about-animation"
+              textAlign='center'
+              variant='h1'
+              id='heading'
+              className='about-heading about-text-name about-animation'
             >
               Manuel Pineda
             </Typography>
@@ -40,20 +40,20 @@ const Home = () => {
 
           <Zoom in={headingAnimation} timeout={600}>
             <Typography
-              textAlign="center"
-              variant="h4"
-              id="heading"
-              className="about-heading about-text-profession about-animation"
+              textAlign='center'
+              variant='h4'
+              id='heading'
+              className='about-heading about-text-profession about-animation'
             >
-              Front-end, <br className="about-line-break" />
+              Front-end, <br className='about-line-break' />
               Back-end & Test Developer
             </Typography>
           </Zoom>
           <Zoom in={textAnimation} timeout={1000}>
             <Typography
-              textAlign="center"
-              id="text"
-              className="about-text-about-me about-animation"
+              textAlign='center'
+              id='text'
+              className='about-text-about-me about-animation'
             >
               Hi! I'm Manuel. I love all sides of programing web apps, from the
               backend, to frontend and testing. I've done each and I believe in
