@@ -30,13 +30,18 @@ const SkillCard = ({
             {headingText}
           </Typography>
         </Zoom>
-        <Typography className="skill-text-section-content">
-          <ul className="skill-list">
-            {skills.map((skill) => {
-              return <li className="single-skill">{skill}</li>;
-            })}
-          </ul>
-        </Typography>
+
+        <ul className="skill-list">
+          {skills.map((skill) => {
+            return (
+              <Typography className="skill-text-section-content" key={skill}>
+                <li className="single-skill">
+                  {skill}
+                </li>
+              </Typography>
+            );
+          })}
+        </ul>
       </div>
     </div>
   );
