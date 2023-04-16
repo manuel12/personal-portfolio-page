@@ -49,6 +49,7 @@ const Contact = () => {
                 <a
                   href='mailto:manuelpinedacabeza.com'
                   target='_blank'
+                  rel='noreferrer'
                   id='socialIcon'
                   className='contact-animation'
                 >
@@ -61,6 +62,7 @@ const Contact = () => {
                 <a
                   href='https://www.linkedin.com/'
                   target='_blank'
+                  rel='noreferrer'
                   id='socialIcon'
                   className='contact-animation'
                 >
@@ -73,6 +75,7 @@ const Contact = () => {
                 <a
                   href='https://github.com/manuel12'
                   target='_blank'
+                  rel='noreferrer'
                   id='socialIcon'
                   className='contact-animation'
                 >
