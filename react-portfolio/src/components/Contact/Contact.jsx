@@ -33,7 +33,7 @@ const Contact = () => {
   });
 
   return (
-    <Box className='contact' id='contact'>
+    <section className='contact' id='contact'>
       <Container className='contact-container'>
         <Typography
           variant='h3'
@@ -133,7 +133,7 @@ const Contact = () => {
           </div>
         </Zoom>
       </Container>
-    </Box>
+    </section>
   );
 };
 
