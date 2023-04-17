@@ -41,7 +41,7 @@ const Projects = () => {
   }, [projectAnimation1]);
 
   return (
-    <Box className='projects' id='projects'>
+    <section className='projects' id='projects'>
       <Container className='projects-container'>
         <Typography
           variant='h3'
@@ -68,7 +68,7 @@ const Projects = () => {
           );
         })}
       </Container>
-    </Box>
+    </section>
   );
 };
 
