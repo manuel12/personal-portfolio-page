@@ -29,21 +29,21 @@ const Skills = () => {
   });
 
   return (
-    <Box className="skills" id="skills">
-      <Container className="skills-container">
-        <Typography id="skillsHeading" className="skills-heading" variant="h3">
+    <section className='skills' id='skills'>
+      <Container className='skills-container'>
+        <Typography id='skillsHeading' className='skills-heading' variant='h3'>
           Skills
         </Typography>
 
-        <div className="skill-card-container">
+        <div className='skill-card-container'>
           <Zoom in={skillCardAnimation} timeout={400}>
             <div
-              id="skillCard"
-              className="skill-card-animation-wrapper skills-animation"
+              id='skillCard'
+              className='skill-card-animation-wrapper skills-animation'
             >
               <SkillCard
                 iconElement={<LaptopMacIcon />}
-                headingText="Front-end"
+                headingText='Front-end'
                 animationFunction={skillIconAnimation}
                 animationTimeout={500}
                 skills={[
@@ -63,12 +63,12 @@ const Skills = () => {
 
           <Zoom in={skillCardAnimation} timeout={600}>
             <div
-              id="skillCard"
-              className="skill-card-animation-wrapper skills-animation"
+              id='skillCard'
+              className='skill-card-animation-wrapper skills-animation'
             >
               <SkillCard
                 iconElement={<SettingsIcon />}
-                headingText="Back-end"
+                headingText='Back-end'
                 animationFunction={skillIconAnimation}
                 animationTimeout={700}
                 skills={["Python", "Django", "Django Rest Framework"]}
@@ -78,12 +78,12 @@ const Skills = () => {
 
           <Zoom in={skillCardAnimation} timeout={800}>
             <div
-              id="skillCard"
-              className="skill-card-animation-wrapper skills-animation"
+              id='skillCard'
+              className='skill-card-animation-wrapper skills-animation'
             >
               <SkillCard
                 iconElement={<BugReportIcon />}
-                headingText="Tests"
+                headingText='Tests'
                 animationFunction={skillIconAnimation}
                 animationTimeout={900}
                 skills={[
@@ -99,7 +99,7 @@ const Skills = () => {
           </Zoom>
         </div>
       </Container>
-    </Box>
+    </section>
   );
 };
 
