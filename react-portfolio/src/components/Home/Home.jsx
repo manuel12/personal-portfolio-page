@@ -25,7 +25,7 @@ const Home = () => {
 
   return (
     <>
-      <Box className='welcome-section' id='about'>
+      <section className='welcome-section'>
         <Container className='about-container'>
           <Zoom in={headingAnimation} timeout={600}>
             <Typography
@@ -63,7 +63,7 @@ const Home = () => {
             </Typography>
           </Zoom>
         </Container>
-      </Box>
+      </section>
     </>
   );
 };
