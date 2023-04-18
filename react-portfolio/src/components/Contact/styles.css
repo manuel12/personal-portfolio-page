@@ -66,11 +66,10 @@
 }
 
 .icon-container > svg {
-  position: relative;
-  top: 10px;
+  margin: 10px;
   font-size: 40px;
   color: var(--social-icon-color);
-  transition: all 0.1s !important;
+  transition: color 0.1s !important;
 }
 
 .icon-container:hover.icon-container > svg {
