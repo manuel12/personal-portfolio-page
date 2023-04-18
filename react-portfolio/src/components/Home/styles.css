@@ -1,6 +1,6 @@
 .welcome-section {
   background-color: var(--white);
-  margin: var(--spacing-lg) auto var(--spacing-sm);
+  /* margin: var(--spacing-lg) auto var(--spacing-sm); */
   width: 100%;
   min-height: 100vh;
   padding: var(--spacing-lg) 0;
@@ -15,7 +15,7 @@
 
 .about-heading {
   position: relative;
-  top: 60px;
+  top: var(--spacing-xl);
   font-family: var(--main-font) !important;
   font-style: italic;
 }
@@ -35,7 +35,7 @@
 
 .about-text-about-me {
   position: relative;
-  top: 120px;
+  top: calc(var(--spacing-xl) + var(--spacing-md));
   margin: 0 auto !important;
   max-width: 450px;
   line-height: 2.2 !important;
