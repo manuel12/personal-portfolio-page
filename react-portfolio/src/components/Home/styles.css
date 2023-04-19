@@ -6,20 +6,20 @@
   text-align: center;
 }
 
-.about-container {
+.home-container {
   height: 840px;
   width: 90%;
   margin: 0 auto;
 }
 
-.about-heading {
+.home-heading {
   position: relative;
   top: var(--spacing-xl);
   font-family: var(--main-font) !important;
   font-style: italic;
 }
 
-.about-text-name {
+.home-text-name {
   background: #00cf98;
   background: linear-gradient(to right, #00cf98 0%, #ccff11 100%);
   -webkit-background-clip: text;
@@ -27,12 +27,12 @@
   margin-bottom: var(--spacing-md) !important;
 }
 
-.about-text-profession {
+.home-text-profession {
   color: var(--main-font);
   margin-bottom: var(--spacing-lg) !important;
 }
 
-.about-text-about-me {
+.home-text-home-me {
   position: relative;
   top: calc(var(--spacing-xl) + var(--spacing-md));
   margin: 0 auto !important;
@@ -50,7 +50,7 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .about-line-break {
+  .home-line-break {
     display: none;
   }
 }
