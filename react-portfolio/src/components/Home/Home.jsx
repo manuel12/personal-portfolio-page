@@ -20,19 +20,19 @@ const Home = () => {
   const observer = createObserver(animationFunctions);
 
   useEffect(() => {
-    observeElements(".about-animation", observer);
+    observeElements(".home-animation", observer);
   });
 
   return (
     <>
       <section className='welcome-section'>
-        <Container className='about-container'>
+        <Container className='home-container'>
           <Zoom in={headingAnimation} timeout={600}>
             <Typography
               textAlign='center'
               variant='h1'
               id='heading'
-              className='about-heading about-text-name about-animation'
+              className='home-heading home-text-name home-animation'
             >
               Manuel Pineda
             </Typography>
@@ -43,9 +43,9 @@ const Home = () => {
               textAlign='center'
               variant='h4'
               id='heading'
-              className='about-heading about-text-profession about-animation'
+              className='home-heading home-text-profession home-animation'
             >
-              Front-end, <br className='about-line-break' />
+              Front-end, <br className='home-line-break' />
               Back-end & Test Developer
             </Typography>
           </Zoom>
@@ -53,7 +53,7 @@ const Home = () => {
             <Typography
               textAlign='center'
               id='text'
-              className='about-text-about-me about-animation'
+              className='home-text-home-me home-animation'
             >
               Hi! I'm Manuel. I love all sides of programing web apps, from the
               backend, to frontend and testing. I've done each and I believe in
