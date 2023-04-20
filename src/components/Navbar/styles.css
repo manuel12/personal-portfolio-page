@@ -1,0 +1,66 @@
+.navbar a {
+  width: 125px;
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.hamburger-button {
+  color: var(--action-color-light);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  background-color: var(--main-color) !important;
+  width: 100%;
+  z-index: 10;
+}
+
+.MuiToolbar-root {
+  min-height: 50px !important;
+}
+
+.MuiMenu-paper {
+  border-radius: 15px !important;
+}
+
+.MuiMenu-paper a {
+  text-decoration: none !important;
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.navbar-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar-button {
+  background-color: white !important;
+  border: none !important;
+  border-radius: 25px !important;
+  position: relative;
+  right: 0;
+  width: calc(100%) !important;
+  height: 40px;
+  font-size: 16px;
+  font-weight: bold !important;
+  font-family: var(--secondary-font) !important;
+  color: var(--font-color) !important;
+  transition: all 0.25s ease-in-out !important;
+}
+
+.navbar-button:hover {
+  background: #00cf98;
+  background: linear-gradient(to right, #00cf98 0%, #ccff11 100%);
+  border-radius: 25px !important;
+  position: relative;
+  right: 25px;
+  width: calc(100% + 50px) !important;
+  color: white !important;
+}
+
+.navbar-menu-item {
+  text-transform: capitalize;
+}
