@@ -16,8 +16,6 @@
 }
 
 .skills-heading {
-  margin-bottom: var(--spacing-lg) !important;
-  font-style: italic;
   color: var(--white);
 }
 
