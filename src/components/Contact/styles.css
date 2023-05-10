@@ -27,9 +27,7 @@
 }
 
 .contact-heading {
-  margin-bottom: var(--spacing-lg) !important;
-  font-style: italic;
-  color: var(--font-color);
+  color: white;
 }
 
 .contact-container p {
