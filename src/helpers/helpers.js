@@ -14,7 +14,12 @@ export const createObserver = (animationFuncs) => {
 };
 
 export const handleElementVisible = (animationFuncs, elementId, value) => {
-  animationFuncs[elementId](value);
+  const currentAnimationFunc = animationFuncs[elementId]
+    ? animationFuncs[elementId]
+    : null;
+  if (value && currentAnimationFunc) {
+    currentAnimationFunc(value);
+  }
 };
 
 export const observeElements = (elementClass, observer) => {
