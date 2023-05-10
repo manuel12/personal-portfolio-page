@@ -1,0 +1,55 @@
+.certifications-container a {
+  display: block;
+  margin: 0 auto calc(var(--spacing-md) + var(--spacing-xs));
+  width: 240px !important;
+  height: 300px !important;
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.certification-card {
+  background-color: white;
+  border-radius: 35px;
+
+  padding: var(--spacing-md) 0;
+
+  filter: drop-shadow(-6px 4px 8px rgba(255, 230, 0, 0.75))
+    drop-shadow(6px 6px 8px rgba(255, 230, 0, 0.75));
+}
+
+.certification-anchor {
+  transition: all 0.25s ease-in-out;
+}
+
+.certification-anchor:hover {
+  transform: scale(1.25);
+}
+
+.image-container > img {
+  width: 75px;
+  height: 75px;
+}
+
+.image-container {
+  margin: 0 auto 10px;
+}
+
+img {
+  margin: 0 auto;
+}
+
+.name-container,
+.issue-date-container {
+  padding: 0 10px;
+  height: 70px;
+}
+
+.name-container {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.issue-date-container {
+  font-style: italic;
+  font-size: 14px;
+}

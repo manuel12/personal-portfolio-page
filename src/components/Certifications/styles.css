@@ -1,0 +1,35 @@
+.certification-section {
+  background-color: rgb(0, 24, 9);
+  width: 100%;
+  min-height: 400px;
+  padding: var(--spacing-lg) 0;
+  text-align: center;
+}
+
+.certifications-heading {
+  color: white;
+}
+
+.certification,
+.certification img {
+  width: 100px;
+  height: 100px;
+}
+
+.medal-icon-attribution {
+  font-size: 10px;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .certifications-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .certifications-container {
+    display: flex;
+  }
+}
