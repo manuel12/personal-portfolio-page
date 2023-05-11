@@ -57,11 +57,12 @@ const Projects = () => {
               projectAnimationClass={"projects-animation"}
               projectAnimation={projectAnimations[`projectAnimation${i + 1}`]}
               projectName={project.projectName}
+              projectTechnologies={project.projectTechnologies}
               projectImageUrl={project.projectImgSrc}
               projectDescription={project.projectDesc}
-              frontendSkills={project.frontendSkills}
-              backendSkills={project.backendSkills}
-              automatedTestSkills={project.automatedTestSkills}
+              frontend={project.frontend}
+              backend={project.backend}
+              automatedTest={project.automatedTest}
             />
           );
         })}
