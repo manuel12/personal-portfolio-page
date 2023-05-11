@@ -34,7 +34,7 @@
   margin: 0 auto 10px;
 }
 
-img {
+.image-container > img {
   margin: 0 auto;
 }
 
