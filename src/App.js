@@ -23,8 +23,8 @@ function App() {
       <Navbar />
       <Home />
       <Skills />
-      <Certifications />
       <Projects />
+      <Certifications />
       <Contact />
     </div>
   );
