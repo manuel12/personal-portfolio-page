@@ -1,14 +1,10 @@
 .single-project-container {
-  padding: var(--spacing-lg);
 }
 
 .project-title {
   margin-bottom: var(--spacing-lg) !important;
   font-family: var(--main-font) !important;
   font-style: italic;
-}
-
-.content {
 }
 
 .technologies-container {
@@ -24,55 +20,94 @@
 }
 
 .images-container {
-  display: flex;
+  display: block;
+}
+
+.images-container > div > span {
+  display: block;
+  font-weight: bold;
 }
 
 .project-image {
   border-radius: 10px;
-  margin-right: var(--spacing-md);
-  margin-bottom: var(--spacing-lg) !important;
+  margin-bottom: var(--spacing-sm) !important;
 }
 
 .desktop-image {
-  width: 75%;
-  height: 400px;
+  width: 100%;
 }
 
 .mobile-image {
-  width: 20%;
-  height: 400px;
+  width: 100%;
+  max-width: 300px;
+  /* width: 20%;
+  height: 400px; */
 }
 
-.project-description {
-  line-height: 2 !important;
-  margin-bottom: var(--spacing-md) !important;
-}
-
-.app-section-available {
+.app-stack {
   display: flex;
 }
 
-td > p {
-  /* border: 1px solid black; */
-  width: 150px;
-  padding: 5px !important;
-  font-style: italic;
+.app-stack > span {
+  display: flex;
+  margin: 0 10px var(--spacing-md);
 }
 
 .checkbox-icon {
-  /* border: 1px solid black; */
-  padding: 5px;
+  padding: 0 5px;
   color: #2ad97d;
 }
 
 .not-present-icon {
-  padding: 5px;
+  padding: 0 5px;
   color: #d92a2a;
 }
 
-table,
-td {
-  border-collapse: collapse;
-  border-spacing: 0;
-  border: 1px solid var(--font-color);
+.project-description {
+  display: block;
+  margin-bottom: var(--spacing-md) !important;
+  font-style: italic;
+  line-height: 2 !important;
+}
+
+.project-urls {
+  display: flex;
+  margin-bottom: var(--spacing-md) !important;
+  width: 100%;
+}
+
+.project-urls .separator {
+  margin: 0 10px;
+}
+
+.project-urls > a {
+  color: var(--font-color) !important;
+}
+
+@media only screen and (min-width: 600px) {
+  .mobile-image {
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .images-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .desktop-image-container {
+    width: 75%;
+  }
+
+  .desktop-image,
+  .mobile-image {
+    max-height: 426px !important;
+    overflow: hidden;
+  }
+
+  .mobile-image-container {
+    width: 20%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
 }
