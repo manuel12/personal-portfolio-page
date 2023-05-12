@@ -10,16 +10,21 @@ import "./styles.css";
 
 const SingleProject = ({
   projectId,
-  projectAnimationClass,
   projectAnimation,
-  projectName,
-  projectTechnologies,
-  projectImageUrl,
-  projectDescription,
-  frontend,
-  backend,
-  automatedTest,
+  projectAnimationClass,
+  projectData,
 }) => {
+  const projectName = projectData.projectName;
+  const projectRepoUrl = projectData.projectRepoUrl;
+  const projectLiveDemoUrl = projectData.projectLiveDemoUrl;
+  const projectTechnologies = projectData.projectTechnologies;
+  const projectImageUrl = projectData.projectImgSrc;
+  const projectMobileImageUrl = projectData.projectMobileImgSrc;
+  const projectDescription = projectData.projectDesc;
+  const frontend = projectData.frontend;
+  const backend = projectData.backend;
+  const automatedTest = projectData.automatedTest;
+
   return (
     <div
       id={projectId}
@@ -50,18 +55,61 @@ const SingleProject = ({
         </div>
         <Grow in={projectAnimation} timeout={800}>
           <div className='images-container'>
-            <img
-              className='project-image desktop-image'
-              src={projectImageUrl}
-              alt=''
-            />
-            <img
-              className='project-image mobile-image'
-              src={
-                "https://user-images.githubusercontent.com/4129325/221216763-897b1481-2626-4b24-ab2c-ce424d24a51f.png"
-              }
-              alt=''
-            />
+            <div className='desktop-image-container'>
+              <span>Desktop</span>
+              <img
+                className='project-image desktop-image'
+                src={projectImageUrl}
+                alt=''
+              />
+            </div>
+            <div className='mobile-image-container'>
+              <span>Mobile</span>
+              <img
+                className='project-image mobile-image'
+                src={projectMobileImageUrl}
+                alt=''
+              />
+            </div>
+          </div>
+        </Grow>
+        <Grow in={projectAnimation} timeout={800}>
+          <div className='app-stack'>
+            <span>
+              <Typography textAlign='left'>Front-end:</Typography>{" "}
+              {frontend ? (
+                <CheckIcon className='checkbox-icon' />
+              ) : (
+                <HorizontalRuleIcon className='not-present-icon' />
+              )}
+            </span>
+            <span>|</span>
+            <span>
+              {" "}
+              <Typography textAlign='left'> Back-end:</Typography>{" "}
+              {backend ? (
+                <CheckIcon className='checkbox-icon' />
+              ) : (
+                <HorizontalRuleIcon className='not-present-icon' />
+              )}
+            </span>
+            <span>|</span>
+            <span>
+              {" "}
+              <Typography textAlign='left'>Automated Tests: </Typography>{" "}
+              {automatedTest ? (
+                <CheckIcon className='checkbox-icon' />
+              ) : (
+                <HorizontalRuleIcon className='not-present-icon' />
+              )}
+            </span>
+          </div>
+        </Grow>
+        <Grow in={projectAnimation} timeout={1000}>
+          <div className='project-urls'>
+            <a href={projectRepoUrl}>Github Repository</a>
+            {projectLiveDemoUrl && <span className='separator'> | </span>}
+            {projectLiveDemoUrl && <a href={projectLiveDemoUrl}>Live Demo</a>}
           </div>
         </Grow>
         <Grow in={projectAnimation} timeout={900}>
@@ -69,44 +117,6 @@ const SingleProject = ({
             {projectDescription}
           </Typography>
         </Grow>
-        <table>
-          <tr>
-            <td>
-              <Typography textAlign='left'>Front-end:</Typography>
-            </td>
-            <td>
-              {frontend ? (
-                <CheckIcon className='checkbox-icon' />
-              ) : (
-                <HorizontalRuleIcon className='not-present-icon' />
-              )}
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <Typography textAlign='left'>Back-end:</Typography>
-            </td>
-            <td>
-              {backend ? (
-                <CheckIcon className='checkbox-icon' />
-              ) : (
-                <HorizontalRuleIcon className='not-present-icon' />
-              )}
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <Typography textAlign='left'>Automated Tests: </Typography>
-            </td>
-            <td>
-              {automatedTest ? (
-                <CheckIcon className='checkbox-icon' />
-              ) : (
-                <HorizontalRuleIcon className='not-present-icon' />
-              )}
-            </td>
-          </tr>
-        </table>
       </div>
     </div>
   );
