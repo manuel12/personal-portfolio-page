@@ -54,15 +54,9 @@ const Projects = () => {
             <SingleProject
               key={project}
               projectId={`project${i + 1}`}
-              projectAnimationClass={"projects-animation"}
               projectAnimation={projectAnimations[`projectAnimation${i + 1}`]}
-              projectName={project.projectName}
-              projectTechnologies={project.projectTechnologies}
-              projectImageUrl={project.projectImgSrc}
-              projectDescription={project.projectDesc}
-              frontend={project.frontend}
-              backend={project.backend}
-              automatedTest={project.automatedTest}
+              projectAnimationClass={"projects-animation"}
+              projectData={project}
             />
           );
         })}
