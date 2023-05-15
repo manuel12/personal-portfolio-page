@@ -14,7 +14,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import "./styles.css";
 
 const Navbar = () => {
-  const pages = ["home", "skills", "certifications", "projects", "contact"];
+  const pages = ["home", "skills", "projects", "certifications", "contact"];
 
   const [anchorElNav, setAnchorElNav] = useState(null);
 
