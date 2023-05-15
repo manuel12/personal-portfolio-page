@@ -8,6 +8,11 @@ import "./styles.css";
 
 const certifications = [
   {
+    name: "Back End Development and APIs",
+    "issue-date": "May, 2023",
+    url: "https://www.freecodecamp.org/certification/ManuelPineda/back-end-development-and-apis",
+  },
+  {
     name: "Data Visualization",
     "issue-date": "May, 2023",
     url: "https://freecodecamp.org/certification/ManuelPineda/data-visualization",
