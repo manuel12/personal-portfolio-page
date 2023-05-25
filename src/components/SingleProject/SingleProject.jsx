@@ -15,15 +15,19 @@ const SingleProject = ({
   projectData,
 }) => {
   const projectName = projectData.projectName;
+  const projectSlug = projectData.projectSlug;
   const projectRepoUrl = projectData.projectRepoUrl;
   const projectLiveDemoUrl = projectData.projectLiveDemoUrl;
   const projectTechnologies = projectData.projectTechnologies;
-  const projectImageUrl = projectData.projectImgSrc;
-  const projectMobileImageUrl = projectData.projectMobileImgSrc;
-  const projectDescription = projectData.projectDesc;
   const frontend = projectData.frontend;
   const backend = projectData.backend;
   const automatedTest = projectData.automatedTest;
+  const projectImageUrl = projectData.projectImgSrc;
+  const projectMobileImageUrl = projectData.projectMobileImgSrc;
+  const projectDescription = projectData.projectDesc;
+  const projectDescriptionContinued = projectData.projectDescContinued;
+  const projectFeatures = projectData.projectFeatures;
+  const projectScreenshots = projectData.projectScreenshots;
 
   return (
     <div
@@ -37,7 +41,7 @@ const SingleProject = ({
       </Grow>
 
       <div className='content'>
-        <div class='technologies-container'>
+        <div className='technologies-container'>
           {projectTechnologies.map((technology, i) => {
             const timeout = 500 + (i + 1) * 100;
             return (
@@ -73,50 +77,115 @@ const SingleProject = ({
             </div>
           </div>
         </Grow>
-        <Grow in={projectAnimation} timeout={800}>
-          <div className='app-stack'>
-            <span>
-              <Typography textAlign='left'>Front-end:</Typography>{" "}
-              {frontend ? (
-                <CheckIcon className='checkbox-icon' />
-              ) : (
-                <HorizontalRuleIcon className='not-present-icon' />
-              )}
-            </span>
-            <span>|</span>
-            <span>
-              {" "}
-              <Typography textAlign='left'> Back-end:</Typography>{" "}
-              {backend ? (
-                <CheckIcon className='checkbox-icon' />
-              ) : (
-                <HorizontalRuleIcon className='not-present-icon' />
-              )}
-            </span>
-            <span>|</span>
-            <span>
-              {" "}
-              <Typography textAlign='left'>Automated Tests: </Typography>{" "}
-              {automatedTest ? (
-                <CheckIcon className='checkbox-icon' />
-              ) : (
-                <HorizontalRuleIcon className='not-present-icon' />
-              )}
-            </span>
+        <div className='app-stack-and-urls-section'>
+          <Grow in={projectAnimation} timeout={800}>
+            <div className='app-stack'>
+              <span>
+                <Typography textAlign='left'>Front-end:</Typography>{" "}
+                {frontend ? (
+                  <CheckIcon className='checkbox-icon' />
+                ) : (
+                  <HorizontalRuleIcon className='not-present-icon' />
+                )}
+              </span>
+              <span>|</span>
+              <span>
+                {" "}
+                <Typography textAlign='left'> Back-end:</Typography>{" "}
+                {backend ? (
+                  <CheckIcon className='checkbox-icon' />
+                ) : (
+                  <HorizontalRuleIcon className='not-present-icon' />
+                )}
+              </span>
+              <span>|</span>
+              <span>
+                {" "}
+                <Typography textAlign='left'>Automated Tests: </Typography>{" "}
+                {automatedTest ? (
+                  <CheckIcon className='checkbox-icon' />
+                ) : (
+                  <HorizontalRuleIcon className='not-present-icon' />
+                )}
+              </span>
+            </div>
+          </Grow>
+          <Grow in={projectAnimation} timeout={1000}>
+            <div className='project-urls'>
+              <a href={projectRepoUrl}>Github Repository</a>
+              {projectLiveDemoUrl && <span className='separator'> | </span>}
+              {projectLiveDemoUrl && <a href={projectLiveDemoUrl}>Live Demo</a>}
+            </div>
+          </Grow>
+        </div>
+
+        {/* <Grow in={projectAnimation} timeout={900}> */}
+        <>
+          <div className='description-section'>
+            <Typography
+              textAlign='left'
+              variant='h5'
+              className='description-heading'
+            >
+              Description
+            </Typography>
+            <Typography className='project-description' textAlign='left'>
+              {projectDescription}
+            </Typography>
+
+            {projectDescriptionContinued.split("<br>").map((descSection) => {
+              return (
+                <Typography className='project-description' textAlign='left'>
+                  {descSection.trim()}
+                </Typography>
+              );
+            })}
           </div>
-        </Grow>
-        <Grow in={projectAnimation} timeout={1000}>
-          <div className='project-urls'>
-            <a href={projectRepoUrl}>Github Repository</a>
-            {projectLiveDemoUrl && <span className='separator'> | </span>}
-            {projectLiveDemoUrl && <a href={projectLiveDemoUrl}>Live Demo</a>}
-          </div>
-        </Grow>
-        <Grow in={projectAnimation} timeout={900}>
-          <Typography className='project-description' textAlign='left'>
-            {projectDescription}
-          </Typography>
-        </Grow>
+
+          {projectFeatures.length ? (
+            <div className='features-section'>
+              <Typography
+                textAlign='left'
+                variant='h5'
+                className='features-heading'
+              >
+                Features
+              </Typography>
+              <ul className='project-features'>
+                {projectFeatures.map((features) => {
+                  return <li>{features}</li>;
+                })}
+              </ul>
+            </div>
+          ) : null}
+
+          {projectScreenshots.length ? (
+            <div className='screenshots-section'>
+              <Typography
+                textAlign='left'
+                variant='h5'
+                className='features-heading'
+              >
+                Screenshots
+              </Typography>
+              <div className='screenshots-container'>
+                {projectScreenshots.map((screenshot) => {
+                  return (
+                    <div className='screenshot'>
+                      <img
+                        src={
+                          process.env.PUBLIC_URL +
+                          `/images/${projectSlug}/${screenshot}.png`
+                        }
+                      />
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          ) : null}
+        </>
+        {/* </Grow> */}
       </div>
     </div>
   );
