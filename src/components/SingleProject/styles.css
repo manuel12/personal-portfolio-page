@@ -1,4 +1,5 @@
 .single-project-container {
+  margin-bottom: calc(var(--spacing-xl) + var(--spacing-xl));
 }
 
 .project-title {
@@ -9,14 +10,15 @@
 
 .technologies-container {
   display: flex;
-  justify-content: left;
+  justify-content: space-around;
+  /* justify-content: left; */
   width: 100%;
   height: 40px;
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
 }
 
 .technologies-container > img {
-  margin-right: 10px;
+  margin-right: var(--spacing-xs);
 }
 
 .images-container {
@@ -34,23 +36,31 @@
 }
 
 .desktop-image {
+  border: 5px solid #f5f5f5;
+  border-radius: 10px;
   width: 100%;
 }
 
 .mobile-image {
+  border: 5px solid #f5f5f5;
+  border-radius: 10px;
   width: 100%;
   max-width: 300px;
-  /* width: 20%;
-  height: 400px; */
+}
+
+.app-stack-and-urls-section {
+  margin-bottom: var(--spacing-md);
 }
 
 .app-stack {
+  height: var(--spacing-md) !important;
   display: flex;
+  margin-bottom: var(--spacing-md);
 }
 
 .app-stack > span {
   display: flex;
-  margin: 0 10px var(--spacing-md);
+  margin-right: var(--spacing-sm);
 }
 
 .checkbox-icon {
@@ -63,16 +73,20 @@
   color: #d92a2a;
 }
 
-.project-description {
+.description-section {
+  width: 100%;
+  /* width: 75%; */
   display: block;
   margin-bottom: var(--spacing-md) !important;
-  font-style: italic;
-  line-height: 2 !important;
+}
+
+.project-description {
+  margin-bottom: var(--spacing-sm) !important;
 }
 
 .project-urls {
   display: flex;
-  margin-bottom: var(--spacing-md) !important;
+  margin-bottom: var(--spacing-sm) !important;
   width: 100%;
 }
 
@@ -84,8 +98,48 @@
   color: var(--font-color) !important;
 }
 
+.features-section {
+  margin-bottom: var(--spacing-md);
+}
+
+.project-features li {
+  list-style-type: initial;
+  text-align: left;
+}
+
+.screenshot-section {
+  margin-bottom: var(--spacing-md);
+}
+
+.screenshots-container {
+  margin: var(--spacing-sm) auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.screenshot {
+  /* max-width: 480px; */
+}
+
+.screenshots-container img {
+  border: 5px solid #f5f5f5;
+  border-radius: 10px;
+  width: 100%;
+}
+
 @media only screen and (min-width: 600px) {
-  .mobile-image {
+  .technologies-container {
+    justify-content: left;
+  }
+
+  .app-stack {
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .screenshot {
+    width: 75%;
+    margin: 0 auto;
   }
 }
 
@@ -106,6 +160,14 @@
 
   .mobile-image-container {
     width: 20%;
+  }
+
+  .description-section {
+    width: 75%;
+  }
+
+  .screenshot {
+    width: 45%;
   }
 }
 
