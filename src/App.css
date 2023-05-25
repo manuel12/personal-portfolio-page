@@ -62,13 +62,12 @@ div {
 }
 
 h1,
-h2 {
-}
-
-h1 {
-}
-
-h3 {
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--main-font) !important;
+  margin-bottom: var(--spacing-xs) !important;
 }
 
 li {
