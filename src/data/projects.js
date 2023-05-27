@@ -2,7 +2,7 @@ const projects = [
   {
     projectName: "Expense Tracker",
     projectSlug: "expense-tracker",
-    projectRepoUrl: "https://github.com/manuel12/django-expense-tracker-public",
+    projectRepoUrl: "https://github.com/manuel12/django-expense-tracker",
     projectLiveDemoUrl: false,
     projectTechnologies: [
       "html5",
