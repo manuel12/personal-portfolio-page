@@ -69,17 +69,24 @@ const projects = [
       resource, this is achieved through authentication, so that users cannot leave more than 1 rating per resource and so that their names appear on the\
       comments.",
     projectFeatures: [
-      "Detail page (Screenshot #1) ",
+      "Detail page (Screenshot #1)",
       "Rating section (Screenshot #2)",
-      "Comment section (Screenshot #3)",
+      "Description and learnings sections (Screenshot #3)",
+      "Comment section (Screenshot #4)",
     ],
-    projectScreenshots: ["detailpage", "ratingSection", "commentSection"],
+    projectScreenshots: [
+      "detailpage",
+      "ratingSection",
+      "descriptionAndLearningSection",
+      "commentSection",
+    ],
     frontend: true,
     backend: true,
     automatedTest: true,
   },
   {
     projectName: "Media Ratings",
+    projectSlug: "media-ratings",
     projectRepoUrl: "https://github.com/manuel12/media-ratings",
     projectLiveDemoUrl: false,
     projectTechnologies: [
@@ -103,8 +110,11 @@ const projects = [
       "The app visits the IMDb and Rotten Tomatoes  websites and uses their own search features to find out the series\
       you requested, then it parses  the score on each page and delivers it to you on a results page. It also creates a record of the searched series\
       on the database so the next time you search for it the result will be retrieved faster.",
-    projectFeatures: [],
-    projectScreenshots: [],
+    projectFeatures: [
+      "Seach page (Screenshot #1)",
+      "Results page (Screenshot #2)",
+    ],
+    projectScreenshots: ["searchInput"],
     frontend: true,
     backend: true,
     automatedTest: true,
