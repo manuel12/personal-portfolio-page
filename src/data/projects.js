@@ -121,6 +121,7 @@ const projects = [
   },
   {
     projectName: "MUI Landing Page",
+    projectSlug: "mui-landing-page",
     projectRepoUrl: "https://github.com/manuel12/mui-landing-page",
     projectLiveDemoUrl: "https://manuel12.github.io/mui-landing-page/",
     projectTechnologies: ["html5", "css3", "javascript", "react", "materialui"],
@@ -134,8 +135,18 @@ const projects = [
       "There is no functionality on the page (except for scrolling when clicking on the navbar). \
       This app is purely to showcase my Material UI and landing page creation skills.",
     frontend: true,
-    projectFeatures: [],
-    projectScreenshots: [],
+    projectFeatures: [
+      "Pizza section (Screenshot #1)",
+      "Pasta section (Screenshot #2)",
+      "Our Story section (Screenshot #3)",
+      "Our Location section (Screenshot #4)",
+    ],
+    projectScreenshots: [
+      "pizzaSection",
+      "pastaSection",
+      "OurStorySection",
+      "OurLocationSection",
+    ],
   },
 
   // {
