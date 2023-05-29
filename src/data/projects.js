@@ -13,10 +13,8 @@ const projects = [
       "python",
       "django",
     ],
-    projectImgSrc:
-      "https://user-images.githubusercontent.com/4129325/221216267-0067eb7d-3be7-4771-a621-92907c10105a.png",
-    projectMobileImgSrc:
-      "https://user-images.githubusercontent.com/4129325/221216763-897b1481-2626-4b24-ab2c-ce424d24a51f.png",
+    projectImgSrc: "desktopImage",
+    projectMobileImgSrc: "mobileImage",
     projectDesc:
       "Expense Tracker is application that can help you track and list expenses, and also analyze charts and statistics about them.",
     projectDescContinued:
@@ -54,10 +52,8 @@ const projects = [
       "python",
       "django",
     ],
-    projectImgSrc:
-      "https://user-images.githubusercontent.com/4129325/221205796-109b3a7a-a102-46f0-b4f2-3711a883b5fe.png",
-    projectMobileImgSrc:
-      "https://user-images.githubusercontent.com/4129325/221207023-de613790-db09-4513-ae9e-ba893a575d54.png",
+    projectImgSrc: "desktopImage",
+    projectMobileImgSrc: "mobileImage",
     projectDesc:
       "Motivation Vault is an application that hosts optimistic, inspiring, motivational and educational content.",
     projectDescContinued:
@@ -100,10 +96,8 @@ const projects = [
       "django",
       ,
     ],
-    projectImgSrc:
-      "https://user-images.githubusercontent.com/4129325/221217865-d51a9f01-a1d1-438b-86b0-d85acd3d4351.png",
-    projectMobileImgSrc:
-      "https://user-images.githubusercontent.com/4129325/238203734-7074b91e-8a14-47e6-9307-51330714b22b.png",
+    projectImgSrc: "desktopImage",
+    projectMobileImgSrc: "mobileImage",
     projectDesc:
       "Media Ratings is an application where you can search for the IMDb & Rotten Tomatoes ratings of your favorite series.",
     projectDescContinued:
@@ -125,10 +119,8 @@ const projects = [
     projectRepoUrl: "https://github.com/manuel12/mui-landing-page",
     projectLiveDemoUrl: "https://manuel12.github.io/mui-landing-page/",
     projectTechnologies: ["html5", "css3", "javascript", "react", "materialui"],
-    projectImgSrc:
-      "https://user-images.githubusercontent.com/4129325/230984164-8bcdccba-f995-4d89-b308-a6a0f59b32ea.png",
-    projectMobileImgSrc:
-      "https://user-images.githubusercontent.com/4129325/230983671-033238e0-22b7-4436-ae56-c7c34d0e3e43.png",
+    projectImgSrc: "desktopImage",
+    projectMobileImgSrc: "mobileImage",
     projectDesc:
       "An example landing page for an italian pizzeria made with Material UI.",
     projectDescContinued:
