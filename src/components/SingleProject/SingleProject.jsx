@@ -63,7 +63,10 @@ const SingleProject = ({
               <span>Desktop</span>
               <img
                 className='project-image desktop-image'
-                src={projectImageUrl}
+                src={
+                  process.env.PUBLIC_URL +
+                  `/images/${projectSlug}/${projectImageUrl}.png`
+                }
                 alt=''
               />
             </div>
@@ -71,7 +74,10 @@ const SingleProject = ({
               <span>Mobile</span>
               <img
                 className='project-image mobile-image'
-                src={projectMobileImageUrl}
+                src={
+                  process.env.PUBLIC_URL +
+                  `/images/${projectSlug}/${projectMobileImageUrl}.png`
+                }
                 alt=''
               />
             </div>
