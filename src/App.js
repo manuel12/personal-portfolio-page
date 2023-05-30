@@ -21,11 +21,11 @@ function App() {
   return (
     <div className='App' id='home'>
       <Navbar />
-      {/* <Home />
-      <Skills /> */}
+      <Home />
+      <Skills />
       <Projects />
-      {/* <Certifications />
-      <Contact /> */}
+      <Certifications />
+      <Contact />
     </div>
   );
 }
