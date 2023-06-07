@@ -57,18 +57,18 @@ const projects = [
     projectDesc:
       "Motivation Vault is an application that hosts optimistic, inspiring, motivational and educational content.",
     projectDescContinued:
-      "It allows user to create, read, update and delete resource of such content, along with adding comments and ratings to them.\
-      The content is in the form of 4 types of 'resources',  which can be either books, podcasts, podcast episodes or motivational speech videos.<br>\
-      Each of these resources will contain a title, a description,  an image(or video) and a 'values' section.\
+      "It allows users to create, read, update and delete 'resources' of such content, along with adding comments and ratings to them.\
+      The content is in the form of 4 types of resources:  books, podcasts, podcast episodes or motivational speech videos.<br>\
+      Each of these resources will contain a title, a description, an image(or video) and a 'learnings' section.\
       The values section is a list of points on things learned after consuming said resource. In the case of a book or podcast episode, for example,\
       you can see what was learned after reading the book or listening to the episode.<br>Users can also leave a rating or  add a  commnet on each\
       resource, this is achieved through authentication, so that users cannot leave more than 1 rating per resource and so that their names appear on the\
       comments.",
     projectFeatures: [
-      "Detail page (Screenshot #1)",
-      "Rating section (Screenshot #2)",
-      "Description and learnings sections (Screenshot #3)",
-      "Comment section (Screenshot #4)",
+      "Resource detail page (Screenshot #1)",
+      "Resource detail page - Rating section (Screenshot #2)",
+      "Resource detail page - Description and learnings sections (Screenshot #3)",
+      "Resource detail page - Comment section (Screenshot #4)",
     ],
     projectScreenshots: [
       "detailpage",
@@ -108,7 +108,7 @@ const projects = [
       "Seach page (Screenshot #1)",
       "Results page (Screenshot #2)",
     ],
-    projectScreenshots: ["searchInput"],
+    projectScreenshots: ["searchInput", "searchResult"],
     frontend: true,
     backend: true,
     automatedTest: true,
