@@ -125,73 +125,77 @@ const SingleProject = ({
           </Grow>
         </div>
 
-        {/* <Grow in={projectAnimation} timeout={900}> */}
         <>
-          <div className='description-section'>
-            <Typography
-              textAlign='left'
-              variant='h5'
-              className='description-heading'
-            >
-              Description
-            </Typography>
-            <Typography className='project-description' textAlign='left'>
-              {projectDescription}
-            </Typography>
+          <Grow in={projectAnimation} timeout={1200}>
+            <div className='description-section'>
+              <Typography
+                textAlign='left'
+                variant='h5'
+                className='description-heading'
+              >
+                Description
+              </Typography>
+              <Typography className='project-description' textAlign='left'>
+                {projectDescription}
+              </Typography>
 
-            {projectDescriptionContinued.split("<br>").map((descSection) => {
-              return (
-                <Typography className='project-description' textAlign='left'>
-                  {descSection.trim()}
+              {projectDescriptionContinued.split("<br>").map((descSection) => {
+                return (
+                  <Typography className='project-description' textAlign='left'>
+                    {descSection.trim()}
+                  </Typography>
+                );
+              })}
+            </div>
+          </Grow>
+
+          <Grow in={projectAnimation} timeout={1400}>
+            {projectFeatures.length ? (
+              <div className='features-section'>
+                <Typography
+                  textAlign='left'
+                  variant='h5'
+                  className='features-heading'
+                >
+                  Features
                 </Typography>
-              );
-            })}
-          </div>
-
-          {projectFeatures.length ? (
-            <div className='features-section'>
-              <Typography
-                textAlign='left'
-                variant='h5'
-                className='features-heading'
-              >
-                Features
-              </Typography>
-              <ul className='project-features'>
-                {projectFeatures.map((features) => {
-                  return <li>{features}</li>;
-                })}
-              </ul>
-            </div>
-          ) : null}
-
-          {projectScreenshots.length ? (
-            <div className='screenshots-section'>
-              <Typography
-                textAlign='left'
-                variant='h5'
-                className='features-heading'
-              >
-                Screenshots
-              </Typography>
-              <div className='screenshots-container'>
-                {projectScreenshots.map((screenshot) => {
-                  return (
-                    <div className='screenshot'>
-                      <img
-                        src={
-                          process.env.PUBLIC_URL +
-                          `/images/${projectSlug}/${screenshot}.png`
-                        }
-                      />
-                    </div>
-                  );
-                })}
+                <ul className='project-features'>
+                  {projectFeatures.map((features) => {
+                    return <li>{features}</li>;
+                  })}
+                </ul>
               </div>
-            </div>
-          ) : null}
+            ) : null}
+          </Grow>
+
+          <Grow in={projectAnimation} timeout={1600}>
+            {projectScreenshots.length ? (
+              <div className='screenshots-section'>
+                <Typography
+                  textAlign='left'
+                  variant='h5'
+                  className='features-heading'
+                >
+                  Screenshots
+                </Typography>
+                <div className='screenshots-container'>
+                  {projectScreenshots.map((screenshot) => {
+                    return (
+                      <div className='screenshot'>
+                        <img
+                          src={
+                            process.env.PUBLIC_URL +
+                            `/images/${projectSlug}/${screenshot}.png`
+                          }
+                        />
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            ) : null}
+          </Grow>
         </>
-        {/* </Grow> */}
       </div>
     </div>
   );
