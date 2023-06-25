@@ -141,11 +141,35 @@ const projects = [
     ],
   },
 
-  // {
-  //   projectRepoUrl: "https://github.com/manuel12/custom-css-library",
-  //   projectName: "Custom Library",
-  //   projectImgSrc: "images/custom-library.png",
-  // },
+  {
+    projectName: "FluentCSS",
+    projectSlug: "fluent-css",
+    projectRepoUrl: "https://github.com/manuel12/fluent-css",
+    projectLiveDemoUrl: "https://manuel12.github.io/fluent-css/",
+    projectTechnologies: ["html5", "css3"],
+    projectImgSrc: "desktopImage",
+    projectMobileImgSrc: "mobileImage",
+    projectDesc:
+      "A CSS library inspired by the styles of the Duolingo and Font Awesome websites.",
+    projectDescContinued:
+      "FluentCSS was inspired by the styles of the Duolingo and Font Awesome websites. \
+      I wanted to create a library that would inmeditaly improve the look of a website when imported,\
+      but also provided the user with utility classes to alter the stylings of the different elements in use.",
+    frontend: true,
+
+    projectFeatures: [
+      "Headings with depth (Screenshot #1)",
+      "Headings with rounded corners (Screenshot #2)",
+      "Social and sound buttons (Screenshot #3)",
+      "Buttons using width classes (Screenshot #4)",
+    ],
+    projectScreenshots: [
+      "headingsWithDepth",
+      "headingsWithRoundCorners",
+      "socialAndSoundButtons",
+      "buttonsUsingWidthClasses",
+    ],
+  },
   // {
   //   projectRepoUrl: "https://github.com/manuel12/technical-documentation-page",
   //   projectName: "Custom Library - Documentation",
