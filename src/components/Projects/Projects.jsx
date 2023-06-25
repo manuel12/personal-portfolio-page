@@ -13,15 +13,15 @@ const Projects = () => {
   const [projectAnimation2, setProjectAnimation2] = useState(false);
   const [projectAnimation3, setProjectAnimation3] = useState(false);
   const [projectAnimation4, setProjectAnimation4] = useState(false);
-  const [porjectAnimation5, setProjectAnimation5] = useState(false);
-  const [porjectAnimation6, setProjectAnimation6] = useState(false);
+  const [projectAnimation5, setProjectAnimation5] = useState(false);
+  const [projectAnimation6, setProjectAnimation6] = useState(false);
 
   const projectAnimations = {
     projectAnimation1,
     projectAnimation2,
     projectAnimation3,
     projectAnimation4,
-    porjectAnimation5,
+    projectAnimation5,
   };
 
   const animationFunctions = {
@@ -53,7 +53,7 @@ const Projects = () => {
         {projects.map((project, i) => {
           return (
             <SingleProject
-              key={project.projectName}
+              key={project}
               projectId={`project${i + 1}`}
               projectAnimation={projectAnimations[`projectAnimation${i + 1}`]}
               projectAnimationClass={"projects-animation"}
