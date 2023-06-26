@@ -136,8 +136,8 @@ const projects = [
     projectScreenshots: [
       "pizzaSection",
       "pastaSection",
-      "OurStorySection",
-      "OurLocationSection",
+      "ourStorySection",
+      "ourLocationSection",
     ],
   },
 
