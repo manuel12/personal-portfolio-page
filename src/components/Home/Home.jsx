@@ -53,11 +53,12 @@ const Home = () => {
               id='text'
               className='home-text-home-me home-animation'
             >
-              Hi! I'm Manuel. I love all sides of programing web apps, from the
-              backend, to frontend and testing. I've done each and I believe in
-              being able to build all parts of an application in order to fully
-              understand how it works. In my free time I enjoy reading, running
-              and photography.
+              Hi! I'm Manuel. Although my background is in QA, I love all sides
+              of programing web apps, from the backend, to frontend and testing.
+              I've done each and I believe in being able to build all parts of
+              an application in order to fully understand how it works. In my
+              free time I enjoy contributing to open source projects, pursuing
+              certifications, reading, running and photography.
             </Typography>
           </Zoom>
         </Container>
