@@ -55,7 +55,7 @@ const Home = () => {
             >
               Hi! I'm Manuel. I'm a professional QA Engineer and love all sides
               of programing web apps, from the backend, to frontend and testing.
-              I've done each and I believe in being able to build all parts of
+              I've done each, and I believe in being able to build all parts of
               an application in order to fully understand how it works. In my
               free time I enjoy creating my own software projects, contributing
               to open source, pursuing certifications, reading, running and
