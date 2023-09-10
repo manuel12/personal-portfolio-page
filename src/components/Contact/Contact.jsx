@@ -60,7 +60,7 @@ const Contact = () => {
               </Zoom>
               <Zoom in={socialIconsAnimation} timeout={800}>
                 <a
-                  href='https://www.linkedin.com/'
+                  href='https://www.linkedin.com/in/manuel-pineda-9070aa69/'
                   target='_blank'
                   rel='noreferrer'
                   id='socialIcon'
