@@ -81,9 +81,9 @@ const projects = [
     automatedTest: true,
   },
   {
-    projectName: "Media Ratings",
-    projectSlug: "media-ratings",
-    projectRepoUrl: "https://github.com/manuel12/media-ratings",
+    projectName: "Series Ratings",
+    projectSlug: "series-ratings",
+    projectRepoUrl: "https://github.com/manuel12/series-ratings",
     projectLiveDemoUrl: false,
     projectTechnologies: [
       "html5",
@@ -99,7 +99,7 @@ const projects = [
     projectImgSrc: "desktopImage",
     projectMobileImgSrc: "mobileImage",
     projectDesc:
-      "Media Ratings is an application where you can search for the IMDb & Rotten Tomatoes ratings of your favorite series.",
+      "Series Ratings is an application where you can search for the IMDb & Rotten Tomatoes ratings of your favorite series.",
     projectDescContinued:
       "The app visits the IMDb and Rotten Tomatoes  websites and uses their own search features to find out the series\
       you requested, then it parses  the score on each page and delivers it to you on a results page. It also creates a record of the searched series\
