@@ -42,8 +42,18 @@ const Contact = () => {
         >
           Contact
         </Typography>
+
         <Zoom in={contactCardAnimation} timeout={600}>
           <div id='contactCard' className='contact-card contact-animation'>
+            <Zoom in={contactQuestionAnimation} timeout={600}>
+              <Typography
+                variant='h5'
+                id='contactQuestion'
+                className='contact-animation'
+              >
+                Do you want to work together?
+              </Typography>
+            </Zoom>
             <div className='icon-section'>
               <Zoom in={socialIconsAnimation} timeout={700}>
                 <a
@@ -85,18 +95,7 @@ const Contact = () => {
                 </a>
               </Zoom>
             </div>
-
-            <Zoom in={contactQuestionAnimation} timeout={600}>
-              <Typography
-                variant='body1'
-                id='contactQuestion'
-                className='contact-animation'
-              >
-                Do you want to work together?
-              </Typography>
-            </Zoom>
-
-            <Box
+            {/* <Box
               component='form'
               id='contactForm'
               className='contact-animation'
@@ -129,7 +128,7 @@ const Contact = () => {
                   Submit
                 </button>
               </Zoom>
-            </Box>
+            </Box> */}
           </div>
         </Zoom>
       </Container>
