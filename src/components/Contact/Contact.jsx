@@ -95,40 +95,6 @@ const Contact = () => {
                 </a>
               </Zoom>
             </div>
-            {/* <Box
-              component='form'
-              id='contactForm'
-              className='contact-animation'
-            >
-              <Zoom in={contactFormAnimation} timeout={700}>
-                <input
-                  id='name'
-                  type='text'
-                  name='name'
-                  placeholder='Your name...'
-                />
-              </Zoom>
-              <Zoom in={contactFormAnimation} timeout={800}>
-                <input
-                  id='email'
-                  type='email'
-                  name='email'
-                  placeholder='Your email...'
-                />
-              </Zoom>
-              <Zoom in={contactFormAnimation} timeout={900}>
-                <textarea
-                  id='message'
-                  name='message'
-                  placeholder='Your message...'
-                ></textarea>
-              </Zoom>
-              <Zoom in={contactFormAnimation} timeout={1000}>
-                <button type='submit' className='submit-btn'>
-                  Submit
-                </button>
-              </Zoom>
-            </Box> */}
           </div>
         </Zoom>
       </Container>
