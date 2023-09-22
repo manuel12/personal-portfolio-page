@@ -20,7 +20,7 @@
   --main-font: "Permanent Marker", cursive;
   --secondary-font: "Montserrat", sans-serif;
 
-  --skills-contact-height: fit-content;
+  --skills-contact-height: 80vh;
 }
 
 ::-webkit-scrollbar {
