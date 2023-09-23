@@ -12,8 +12,6 @@ const CertificationCard = ({
   certificationAnimation,
   animationTimeout,
 }) => {
-  console.log(`certificationAnimation: ${certificationAnimation}`);
-
   return (
     <a className='certification-anchor' href={url} target='_blank'>
       <Zoom in={certificationAnimation} timeout={animationTimeout}>
