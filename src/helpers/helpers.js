@@ -1,9 +1,6 @@
 export const createObserver = (animationFuncs) => {
   return new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-      console.log(
-        `${entry.target.id} is intersecting: ${entry.isIntersecting}`
-      );
       handleElementVisible(
         animationFuncs,
         entry.target.id,
