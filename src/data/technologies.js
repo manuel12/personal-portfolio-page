@@ -14,6 +14,13 @@ const technologies = {
 
   materialui:
     "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/materialui/materialui-original.svg",
+
+  typescript:
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
+  node: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg",
+  express:
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg",
+
   cypress:
     "https://user-images.githubusercontent.com/4129325/221191364-90ec4583-f906-43f6-969b-bac956846fbd.svg",
   python:
