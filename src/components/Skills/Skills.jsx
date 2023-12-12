@@ -50,6 +50,8 @@ const Skills = () => {
                   "HMTL",
                   "CSS",
                   "Bootstrap",
+                  "JavaScript",
+                  "TypeScript",
                   "React",
                   "Font Awesome",
                   "MaterialUI",
@@ -69,7 +71,7 @@ const Skills = () => {
                 headingText='Back-end'
                 animationFunction={skillIconAnimation}
                 animationTimeout={700}
-                skills={["Python", "Django", "Django Rest Framework"]}
+                skills={["Node.js", "Express", "Python", "Django", "Django Rest Framework"]}
               />
             </div>
           </Zoom>
@@ -85,7 +87,7 @@ const Skills = () => {
                 animationFunction={skillIconAnimation}
                 animationTimeout={900}
                 skills={[
-                  "JS",
+                  "JavaScript",
                   "Cypress",
                   "Cypress Image Snapshot",
                   "Python",
