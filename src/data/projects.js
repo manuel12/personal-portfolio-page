@@ -1,5 +1,44 @@
 const projects = [
   {
+    projectName: "Productivity App",
+    projectSlug: "productivity-app",
+    projectRepoUrl: "https://github.com/manuel12/productivity-app",
+    projectLiveDemoUrl: false,
+    projectTechnologies: [
+      "html5",
+      "css3",
+      "bootstrap",
+      "javascript",
+      "typescript",
+      "express",
+      "node",
+      "cypress",
+    ],
+    projectImgSrc: "desktopImage",
+    projectMobileImgSrc: "mobileImage",
+    projectDesc:
+      "The Productivity App helps you list and track your todos completed or uncompleted as well as tracking your daily todos and any learnings made.",
+    projectDescContinued:
+      "You can see see how many todos you've completed today, \
+      how many todos on average you've completed daily and also the percentage difference\
+      between those 2 number to know if you are ahead of your average or falling behind.",
+    projectFeatures: [
+      "Todos statistics (Screenshot #1)",
+      "Todos filter via tabs: all, completed and uncompleted (Screenshot #2) ",
+      "Todos editing (Screenshot #3)",
+      "Error labels on inputs (Screenshot #4)",
+    ],
+    projectScreenshots: [
+      "todo-stats",
+      "todo-tabs",
+      "todo-editing",
+      "todo-error-labels",
+    ],
+    frontend: true,
+    backend: true,
+    automatedTest: true,
+  },
+  {
     projectName: "Expense Tracker",
     projectSlug: "expense-tracker",
     projectRepoUrl: "https://github.com/manuel12/django-expense-tracker",
