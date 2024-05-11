@@ -121,7 +121,9 @@ const SingleProject = ({
 
           <Grow in={projectAnimation} timeout={1000}>
             <div className='project-urls'>
-              <a href={projectRepoUrl}>Github Repository</a>
+              <a href={projectRepoUrl} target='_blank'>
+                Github Repository
+              </a>
               {projectLiveDemoUrl && <span className='separator'> | </span>}
               {projectLiveDemoUrl && <a href={projectLiveDemoUrl}>Live Demo</a>}
             </div>
