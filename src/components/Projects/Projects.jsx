@@ -16,6 +16,7 @@ const Projects = () => {
   const [projectAnimation5, setProjectAnimation5] = useState(false);
   const [projectAnimation6, setProjectAnimation6] = useState(false);
   const [projectAnimation7, setProjectAnimation7] = useState(false);
+  const [projectAnimation8, setProjectAnimation8] = useState(false);
 
   const projectAnimations = {
     projectAnimation1,
@@ -24,7 +25,8 @@ const Projects = () => {
     projectAnimation4,
     projectAnimation5,
     projectAnimation6,
-    projectAnimation7
+    projectAnimation7,
+    projectAnimation8
   };
 
   const animationFunctions = {
@@ -35,6 +37,7 @@ const Projects = () => {
     project5: setProjectAnimation5,
     project6: setProjectAnimation6,
     project7: setProjectAnimation7,
+    project8: setProjectAnimation8
   };
 
   const observer = createObserver(animationFunctions);
