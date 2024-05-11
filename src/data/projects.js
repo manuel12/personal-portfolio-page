@@ -13,7 +13,7 @@ const projects = [
 
     projectDescContinued:
       'This project aims to complete all the tests cases outlined in https://automationexercise.com/test_cases. \
-    It implements all such tests cases using the Cypress testing framework. The test cases are outlined below.',
+    It implements all such tests cases using the Cypress testing framework.',
     projectFeatures: [],
     projectScreenshots: [],
     frontend: false,
