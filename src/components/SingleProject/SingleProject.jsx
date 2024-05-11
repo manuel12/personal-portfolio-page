@@ -1,12 +1,12 @@
-import React from "react";
-import Typography from "@mui/material/Typography";
-import { Grow } from "@mui/material";
+import React from 'react';
+import Typography from '@mui/material/Typography';
+import { Grow } from '@mui/material';
 
-import CheckIcon from "@mui/icons-material/Check";
-import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule";
+import CheckIcon from '@mui/icons-material/Check';
+import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
 
-import technologies from "../../data/technologies";
-import "./styles.css";
+import technologies from '../../data/technologies';
+import './styles.css';
 
 const SingleProject = ({
   projectId,
@@ -57,6 +57,7 @@ const SingleProject = ({
             );
           })}
         </div>
+
         <Grow in={projectAnimation} timeout={800}>
           <div className='images-container'>
             <div className='desktop-image-container'>
@@ -83,11 +84,12 @@ const SingleProject = ({
             </div>
           </div>
         </Grow>
+
         <div className='app-stack-and-urls-section'>
           <Grow in={projectAnimation} timeout={800}>
             <div className='app-stack'>
               <span>
-                <Typography textAlign='left'>Front-end:</Typography>{" "}
+                <Typography textAlign='left'>Front-end:</Typography>{' '}
                 {frontend ? (
                   <CheckIcon className='checkbox-icon' />
                 ) : (
@@ -96,8 +98,8 @@ const SingleProject = ({
               </span>
               <span>|</span>
               <span>
-                {" "}
-                <Typography textAlign='left'> Back-end:</Typography>{" "}
+                {' '}
+                <Typography textAlign='left'> Back-end:</Typography>{' '}
                 {backend ? (
                   <CheckIcon className='checkbox-icon' />
                 ) : (
@@ -106,8 +108,8 @@ const SingleProject = ({
               </span>
               <span>|</span>
               <span>
-                {" "}
-                <Typography textAlign='left'>Automated Tests: </Typography>{" "}
+                {' '}
+                <Typography textAlign='left'>Automated Tests: </Typography>{' '}
                 {automatedTest ? (
                   <CheckIcon className='checkbox-icon' />
                 ) : (
@@ -116,6 +118,7 @@ const SingleProject = ({
               </span>
             </div>
           </Grow>
+
           <Grow in={projectAnimation} timeout={1000}>
             <div className='project-urls'>
               <a href={projectRepoUrl}>Github Repository</a>
@@ -139,18 +142,22 @@ const SingleProject = ({
                 {projectDescription}
               </Typography>
 
-              {projectDescriptionContinued.split("<br>").map((descSection) => {
-                return (
-                  <Typography className='project-description' textAlign='left'>
-                    {descSection.trim()}
-                  </Typography>
-                );
-              })}
+              {projectDescriptionContinued &&
+                projectDescriptionContinued.split('<br>').map((descSection) => {
+                  return (
+                    <Typography
+                      className='project-description'
+                      textAlign='left'
+                    >
+                      {descSection.trim()}
+                    </Typography>
+                  );
+                })}
             </div>
           </Grow>
 
-          <Grow in={projectAnimation} timeout={1400}>
-            {projectFeatures.length ? (
+          {projectFeatures.length ? (
+            <Grow in={projectAnimation} timeout={1400}>
               <div className='features-section'>
                 <Typography
                   textAlign='left'
@@ -160,16 +167,17 @@ const SingleProject = ({
                   Features
                 </Typography>
                 <ul className='project-features'>
-                  {projectFeatures.map((features) => {
-                    return <li>{features}</li>;
-                  })}
+                  {projectFeatures.length &&
+                    projectFeatures.map((features) => {
+                      return <li>{features}</li>;
+                    })}
                 </ul>
               </div>
-            ) : null}
-          </Grow>
+            </Grow>
+          ) : null}
 
-          <Grow in={projectAnimation} timeout={1600}>
-            {projectScreenshots.length ? (
+          {projectScreenshots.length ? (
+            <Grow in={projectAnimation} timeout={1600}>
               <div className='screenshots-section'>
                 <Typography
                   textAlign='left'
@@ -183,6 +191,7 @@ const SingleProject = ({
                     return (
                       <div className='screenshot'>
                         <img
+                          alt=''
                           src={
                             process.env.PUBLIC_URL +
                             `/images/${projectSlug}/${screenshot}.png`
@@ -193,8 +202,8 @@ const SingleProject = ({
                   })}
                 </div>
               </div>
-            ) : null}
-          </Grow>
+            </Grow>
+          ) : null}
         </>
       </div>
     </div>
