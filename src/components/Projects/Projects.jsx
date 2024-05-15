@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
-import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
+import React, { useState, useEffect } from 'react';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
 
-import SingleProject from "../SingleProject/SingleProject";
-import projects from "../../data/projects";
-import { createObserver, observeElements } from "../../helpers/helpers";
+import SingleProject from '../SingleProject/SingleProject';
+import projects from '../../data/projects';
+import { createObserver, observeElements } from '../../helpers/helpers';
 
-import "./styles.css";
+import './styles.css';
 
 const Projects = () => {
   const [projectAnimation1, setProjectAnimation1] = useState(false);
@@ -17,6 +17,7 @@ const Projects = () => {
   const [projectAnimation6, setProjectAnimation6] = useState(false);
   const [projectAnimation7, setProjectAnimation7] = useState(false);
   const [projectAnimation8, setProjectAnimation8] = useState(false);
+  const [projectAnimation9, setProjectAnimation9] = useState(false);
 
   const projectAnimations = {
     projectAnimation1,
@@ -26,7 +27,8 @@ const Projects = () => {
     projectAnimation5,
     projectAnimation6,
     projectAnimation7,
-    projectAnimation8
+    projectAnimation8,
+    projectAnimation9,
   };
 
   const animationFunctions = {
@@ -37,13 +39,14 @@ const Projects = () => {
     project5: setProjectAnimation5,
     project6: setProjectAnimation6,
     project7: setProjectAnimation7,
-    project8: setProjectAnimation8
+    project8: setProjectAnimation8,
+    project9: setProjectAnimation9,
   };
 
   const observer = createObserver(animationFunctions);
 
   useEffect(() => {
-    observeElements(".projects-animation", observer);
+    observeElements('.projects-animation', observer);
   }, [projectAnimation1]);
 
   return (
@@ -63,7 +66,7 @@ const Projects = () => {
               key={project}
               projectId={`project${i + 1}`}
               projectAnimation={projectAnimations[`projectAnimation${i + 1}`]}
-              projectAnimationClass={"projects-animation"}
+              projectAnimationClass={'projects-animation'}
               projectData={project}
             />
           );
