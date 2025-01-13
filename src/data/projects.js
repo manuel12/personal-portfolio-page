@@ -1,6 +1,6 @@
 const projects = [
   {
-    projectName: 'Automation Practice',
+    projectName: 'QA Engineer Skill Showcase: Automation Practice',
     projectSlug: 'automation-practice',
     projectRepoUrl: 'https://github.com/manuel12/automation-practice',
     projectLiveDemoUrl: false,
@@ -8,11 +8,10 @@ const projects = [
     projectImgSrc: 'desktopImage',
     projectMobileImgSrc: 'mobileImage',
     projectDesc:
-      'The Automation Practice website is a full-fledged website built for atuomation practice purposes. ',
+      'This project aims to showcase the process used to test the website Automation Practice, including the creation of all the corresponding test documentation, such as wikis, describing each of the modules of functionality that make up the application, the user stories outlining such functionality, and the test cases derived from them.',
 
     projectDescContinued:
-      'This project aims to complete all the tests cases outlined in the readme file. \
-        It implements all such tests cases using the Cypress testing framework.',
+      'The high priority test cases have also been translated into test scripts and automated. This project implements all such test scripts using the Cypress testing framework.',
     projectFeatures: [],
     projectScreenshots: [],
     frontend: false,
@@ -20,7 +19,7 @@ const projects = [
     automatedTest: true,
   },
   {
-    projectName: 'Automation Exercise',
+    projectName: 'QA Engineer Skill Showcase: Automation Exercise',
     projectSlug: 'automation-exercise',
     projectRepoUrl:
       'https://github.com/manuel12/automation-exercise-test-cases',
